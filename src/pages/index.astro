@@ -1,12 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import profile from "../assets/profile.jpg";
 ---
 
 <Layout title="Anson Chan">
 
 <section class="hero">
 
-  <div class="hero-text">
+<div class="hero-text">
 
 <h1>
   Designing Trustworthy
@@ -34,12 +35,12 @@ import Layout from "../layouts/Layout.astro";
 
 </div>
 
-  <div class="hero-photo">
-
-    <div class="photo-placeholder">
-      Photo
-    </div>
-
+<div class="hero-photo">
+  	<img
+    src={profile.src}
+    alt="Portrait of Anson Chan"
+    class="profile-photo"
+	/>
 </div>
 
 </section>

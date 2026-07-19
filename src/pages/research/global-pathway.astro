@@ -1,0 +1,287 @@
+---
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title="A Global Pathway to Net Zero Buildings">
+
+<section class="project-page">
+
+<p class="research-status status-green">
+Accepted • ASCE Journal of Construction Engineering and Management
+</p>
+
+<h1>
+A Global Pathway to Net Zero Buildings:
+A Correlation Network Analysis of Building Information Modelling (BIM)-based Whole Life Carbon Assessment Challenges
+</h1>
+
+<p class="lead">
+<h2>Why Correlation Network Analysis for BIM-based Whole Life Carbon Assessment?</h2>
+BIM-based whole life carbon assessment drives global digitalisation strategies to achieve net zero targets in buildings.
+However, existing studies focus excessively on its technical aspects (e.g., BIM plug-ins and
+WLCA automation); hence, overlooking socio-economic, institutional, political, and cultural factors.
+
+<strong> Rather than asking "which factor matters most?", we ask "how do factors interact and shape decisions?"</strong>
+</p>
+
+<p>
+Sustainable construction studies commonly rely on the below research methodologies with several limitations (see Figure 1)
+</p>
+
+<ul>
+<li>Regression analysis: assume linear relationships between independent and dependent variables and predict their structure</li>
+
+<li>Structural Equation Modeling (SEM): assume a predefined causal relationship</li>
+
+<li>Principal Component Analysis (PCA): reduce multiple variables into factors but can hide network positions</li>
+
+<li>Descriptive correlation analysis: summarise mean, median, ranking and standard deviation, but does not show the system relationships among variables</li>
+
+<li>Social Network Analysis (SNA): variables are usually about stakholders and organisations but not the variable itself</li>
+</ul>
+
+<figure>
+<img
+src="/research/global-pathway/1-MethodComparisonTable.png"
+class="project-figure"
+/>
+
+<figcaption>
+Figure 1. Comparison of analytical methods with the proposed CNA framework
+</figcaption>
+</figure>
+
+<p>
+This study aims to examine the interrelationships and dynamics of
+BIM-based WLCA challenges to provide net zero policy strategies in different jurisdictions. 
+
+To this end, 20 challenges were first identified
+from a literature review. A questionnaire survey was then conducted with 145
+international professionals and academics across 23 countries.
+
+Based on the survey responses measured by the 5-point Likert scale, mean scores
+and the correlation coefficients were computed for the 20 challenges.
+
+Subsequently, mean score rankings, agreement, correlation, network, and centrality analysis were carried out
+to map the interrelationships among the BIM-based WLCA challenges (see Figure 2).
+</p>
+
+<figure>
+<img
+src="/research/global-pathway/2-ResearchDesign.png"
+class="project-figure"
+/>
+
+<figcaption>
+Figure 2. Overall research design 
+from the identification of 20 BIM-based whole life carbon assessment challenges in literature 
+to correlation network analyis
+</figcaption>
+</figure>
+
+<h2>How builtenv-cna works: a strong focus on system interdependency and visualisation, without pre-defined models</h2>
+
+<p>
+Correlation network analysis (CNA) investigates the interrelationships among variables based on the Graph Theory.
+CNA originates from social network analysis (SNA) to study the interconnectivity of relationships among individuals, 
+for example the spread of COVID-19 in societies.
+
+Unlike traditional SNA in sustainable construction, which focuses on stakeholders and organisations,
+builtenv-cna focuses on system dynamics among the 20 challenges where:
+</p>
+
+<ul>
+<li>Challenges are represented as network nodes</li>
+
+<li>Correlations are represented as weighted edges</li>
+
+<li>Network metrics identify influential variables</li>
+
+<li>Community detection reveals hidden structural patterns</li>
+
+<li>Networks can be exported directly to Gephi</li>
+</ul>
+
+<p>
+Figure 3 shows the correlation network analysis workflow, which transforms numeric questionnaire responses 
+into correlation heatmaps and network graphs.
+
+Afterwards, a threshold value based on the correlation coefficient (r value) was chosen to determine
+whether a graphical network relationship exists between each pair of challenges.
+In this study, a threshold value of r = 0.30 was adopted with reference to previous literature findings.
+
+According to Cohen (1988) benchmarks, an r value of 0.30 represents a “moderate” relationship.
+While a higher threshold, for example r = 0.50, would retain the “strong” relationships and plausibly derive more rigorous research findings,
+such a restrictive selection criterion possibly neglects the weaker but structurally representative associations. 
+Excluding these weak connections oversimplifies the network creation and introduces potential statistical biases.
+
+On the other hand, the selection of a threshold value of 0.30 is empirically supported by Gignac and Szodorai (2016)’s meta-analysis of 708 correlation coefficients.
+
+Since this study’s research objective is not about the computational deduction and optimization of threshold value, 
+no sensitivity analysis was conducted to determine the best fit.
+</p>
+
+<figure>
+<img
+src="/research/global-pathway/3-CNA-workflow.png"
+class="project-figure"
+/>
+<figcaption>
+Figure 3. Correlation network analysis workflow
+</figcaption>
+</figure>
+
+<h2>What do the correlation heatmaps and network graphs reveal? Global VS Regional</h2>
+<p>
+The correlation coefficients were color-coded on the scale of -1 (blue) to 1 (red) and visualized in a symmetrical heatmap. Most of the challenge pairs displayed positive correlations.
+
+In all jurisdictions, the closest correlation was formed with <strong> #Challenge 18 “BQ, Drawings and
+Specifications are not conforming with the requirements of WLCA”</strong>
+and <strong> #Challenge 20 “lack of sitespecific information to render accurate WLCA calculations”</strong>. 
+
+The strongest positive relationships were detected in China, with only one negative correlation between
+<strong> #Challenge 01 “Insufficiency of BIM to carry out WLCA at early design stage”</strong>
+and <strong> #Challenge 19 “Intellectual Property and privacy concerns about data-sharing on BIM platforms”</strong>.
+
+Meanwhile, China and the USA surprisingly exhibited the closest adoption
+challenge archetypes despite their agonistic geopolitical relationships.
+</p>
+
+<figure>
+<img
+src="/research/global-pathway/4-CorHeatMap-All.png"
+class="project-figure"
+/>
+<figcaption>
+Figure 4. Correlation heatmap for all regions
+</figcaption>
+</figure>
+
+<p>
+As seen from Figure 5, a larger and darker node signifies a stronger variable that exerts greater systemic
+influence over other nodes, while a smaller and lighter node suggests a weaker variable that is
+highly dependent on other nodes in the network. The size of the node is based on its respective
+degree centrality value, which measures the number of connections that a node form with other
+nodes in the same graph. 
+</p>
+
+<p>
+For example, the largest node is <strong>#Challenge 20 “lack of sitespecific information to render accurate WLCA calculations”</strong> 
+with a darker green colour. 
+#Challenge 20 has branched out the largest number of edges, forming connections with 13 other challenges,
+establishing it as the core systemic challenge for BIM-based whole life carbon assessment globally.
+
+A caveat is that the central role of #Challenge 20 is built on undirected correlation coefficients and thus does not stimulate
+other challenges’ occurrence. We can only imply that the highest number of relationships stems
+from the challenge #Challenge 20, but no causality is drawn among the challenges with #Challenge 20.
+
+</p>
+
+<figure>
+<img
+src="/research/global-pathway/5-NetworkGraph-All.png"
+class="project-figure"
+/>
+<figcaption>
+Figure 5. Network graph for all regions
+</figcaption>
+</figure>
+
+<section class="framework">
+
+<h2>A Research and Policy Toolkit: 4 Fundamental Features</h2>
+
+<p class="framework-intro">
+builtenv-cna models BIM-based whole life carbon assessment challenges as interconnected systems rather than isolated variables. 
+The framework enables researchers, policymakers, and professionals to identify the underlying graphical relationships 
+with 4 fundamental features:
+
+</p>
+
+<div class="framework-grid">
+
+<div class="framework-card">
+<h3>📊 Correlation Analysis</h3>
+
+<ul>
+<li>Pearson</li>
+<li>Spearman</li>
+<li>Kendall</li>
+</ul>
+</div>
+
+<div class="framework-card">
+<h3>🕸 Network Construction</h3>
+
+<ul>
+<li>Weighted edges</li>
+<li>Threshold filtering</li>
+<li>Signed networks</li>
+</ul>
+</div>
+
+<div class="framework-card">
+<h3>📈 Network Analytics</h3>
+
+<ul>
+<li>Centrality metrics</li>
+<li>Betweenness</li>
+<li>Community detection</li>
+<li>Eigenvector analysis</li>
+</ul>
+</div>
+
+<div class="framework-card">
+<h3>🌍 Visualisation</h3>
+
+<ul>
+<li>Correlation heatmaps</li>
+<li>Network graphs</li>
+<li>Gephi export</li>
+</ul>
+</div>
+
+</div>
+
+</section>
+
+<div class="button-group">
+
+<a
+class="hero-button"
+href="https://github.com/ansontkchan/builtenv-cna"
+target="_blank">
+
+GitHub →
+</a>
+
+<a
+class="hero-button secondary"
+href="#">
+
+Paper (Coming Soon)
+
+</a>
+
+<a
+class="hero-button secondary"
+href="#">
+
+Citation
+
+</a>
+
+</div>
+
+</section>
+
+<h2>Acknowledgements</h2>
+
+<p class="framework-intro">
+The authors would like to thank Dorsett Hospitality International Limited for funding this PhD research.
+Special thanks also go to the industry professionals and the academics who participated in the pilot study and questionnaire survey. 
+
+</p>
+
+
+</Layout>

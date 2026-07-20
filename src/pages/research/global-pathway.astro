@@ -16,7 +16,7 @@ A Correlation Network Analysis of Building Information Modelling (BIM)-based Who
 </h1>
 
 <p class="lead">
-<h2>Why Correlation Network Analysis for BIM-based Whole Life Carbon Assessment?</h2>
+<h2>Why We Need Correlation Network Analysis for BIM-based Whole Life Carbon Assessment?</h2>
 BIM-based whole life carbon assessment drives global digitalisation strategies to achieve net zero targets in buildings.
 However, existing studies focus excessively on its technical aspects (e.g., BIM plug-ins and
 WLCA automation); hence, overlooking socio-economic, institutional, political, and cultural factors.
@@ -29,15 +29,13 @@ Sustainable construction studies commonly rely on the below research methodologi
 </p>
 
 <ul>
-<li>Regression analysis: assume linear relationships between independent and dependent variables and predict their structure</li>
+<li>Regression analysis: assume linear relationships between independent and dependent variables for predictions</li>
 
 <li>Structural Equation Modeling (SEM): assume a predefined causal relationship</li>
 
 <li>Principal Component Analysis (PCA): reduce multiple variables into factors but can hide network positions</li>
 
-<li>Descriptive correlation analysis: summarise mean, median, ranking and standard deviation, but does not show the system relationships among variables</li>
-
-<li>Social Network Analysis (SNA): variables are usually about stakholders and organisations but not the variable itself</li>
+<li>Social Network Analysis (SNA): focuses on stakeholders and organisations but not the variables themselves</li>
 </ul>
 
 <figure>
@@ -63,7 +61,7 @@ Based on the survey responses measured by the 5-point Likert scale, mean scores
 and the correlation coefficients were computed for the 20 challenges.
 
 Subsequently, mean score rankings, agreement, correlation, network, and centrality analysis were carried out
-to map the interrelationships among the BIM-based WLCA challenges (see Figure 2).
+to map the interrelationships among the 20 BIM-based WLCA challenges (see Figure 2).
 </p>
 
 <figure>
@@ -75,7 +73,7 @@ class="project-figure"
 <figcaption>
 Figure 2. Overall research design 
 from the identification of 20 BIM-based whole life carbon assessment challenges in literature 
-to correlation network analyis
+to correlation network analysis
 </figcaption>
 </figure>
 
@@ -83,10 +81,10 @@ to correlation network analyis
 
 <p>
 Correlation network analysis (CNA) investigates the interrelationships among variables based on the Graph Theory.
-CNA originates from social network analysis (SNA) to study the interconnectivity of relationships among individuals, 
+CNA originates from Social Network Analysis (SNA) to study the interconnectivity of relationships among individuals, 
 for example the spread of COVID-19 in societies.
 
-Unlike traditional SNA in sustainable construction, which focuses on stakeholders and organisations,
+Yet, unlike traditional SNA in sustainable construction, which focuses on stakeholders and organisations,
 builtenv-cna focuses on system dynamics among the 20 challenges where:
 </p>
 
@@ -99,20 +97,20 @@ builtenv-cna focuses on system dynamics among the 20 challenges where:
 
 <li>Community detection reveals hidden structural patterns</li>
 
-<li>Networks can be exported directly to Gephi</li>
+<li>Networks can be exported directly to Gephi for visualisation and analysis</li>
 </ul>
 
 <p>
-Figure 3 shows the correlation network analysis workflow, which transforms numeric questionnaire responses 
-into correlation heatmaps and network graphs.
+Figure 3 shows the correlation network analysis workflow, which first transforms 145 collected numeric questionnaire responses 
+into correlation heatmaps.
 
 Afterwards, a threshold value based on the correlation coefficient (r value) was chosen to determine
 whether a graphical network relationship exists between each pair of challenges.
 In this study, a threshold value of r = 0.30 was adopted with reference to previous literature findings.
 
-According to Cohen (1988) benchmarks, an r value of 0.30 represents a “moderate” relationship.
-While a higher threshold, for example r = 0.50, would retain the “strong” relationships and plausibly derive more rigorous research findings,
-such a restrictive selection criterion possibly neglects the weaker but structurally representative associations. 
+According to Cohen's (1988) benchmark, an r value of 0.30 represents a “moderate” relationship.
+While a higher threshold, for example r = 0.50, would retain the “strong” relationships and plausibly derive more rigorous research findings.
+Nonetheless, such a restrictive selection criterion possibly neglects the weaker but structurally representative associations. 
 Excluding these weak connections oversimplifies the network creation and introduces potential statistical biases.
 
 On the other hand, the selection of a threshold value of 0.30 is empirically supported by Gignac and Szodorai (2016)’s meta-analysis of 708 correlation coefficients.
@@ -131,17 +129,19 @@ Figure 3. Correlation network analysis workflow
 </figcaption>
 </figure>
 
-<h2>What do the correlation heatmaps and network graphs reveal? Global VS Regional</h2>
+<h2>What do the correlation heatmaps and network graphs reveal?
+    Global VS Regional Pathway to Net Zero Buildings</h2>
+
 <p>
 The correlation coefficients were color-coded on the scale of -1 (blue) to 1 (red) and visualized in a symmetrical heatmap. Most of the challenge pairs displayed positive correlations.
 
-In all jurisdictions, the closest correlation was formed with <strong> #Challenge 18 “BQ, Drawings and
-Specifications are not conforming with the requirements of WLCA”</strong>
-and <strong> #Challenge 20 “lack of sitespecific information to render accurate WLCA calculations”</strong>. 
+In all jurisdictions, the closest correlation was formed with #Challenge 18 “BQ, Drawings and
+Specifications are not conforming with the requirements of WLCA”
+and #Challenge 20 “lack of sitespecific information to render accurate WLCA calculations”. 
 
-The strongest positive relationships were detected in China, with only one negative correlation between
-<strong> #Challenge 01 “Insufficiency of BIM to carry out WLCA at early design stage”</strong>
-and <strong> #Challenge 19 “Intellectual Property and privacy concerns about data-sharing on BIM platforms”</strong>.
+The strongest positive relationships were detected in China, with only one negative correlation between 
+#Challenge 01 “Insufficiency of BIM to carry out WLCA at early design stage”
+and #Challenge 19 “Intellectual Property and privacy concerns about data-sharing on BIM platforms”.
 
 Meanwhile, China and the USA surprisingly exhibited the closest adoption
 challenge archetypes despite their agonistic geopolitical relationships.
@@ -158,7 +158,7 @@ Figure 4. Correlation heatmap for all regions
 </figure>
 
 <p>
-As seen from Figure 5, a larger and darker node signifies a stronger variable that exerts greater systemic
+Regarding the network graphs, as seen from Figure 5, a larger and darker node signifies a stronger variable that exerts greater systemic
 influence over other nodes, while a smaller and lighter node suggests a weaker variable that is
 highly dependent on other nodes in the network. The size of the node is based on its respective
 degree centrality value, which measures the number of connections that a node form with other
@@ -166,7 +166,7 @@ nodes in the same graph.
 </p>
 
 <p>
-For example, the largest node is <strong>#Challenge 20 “lack of sitespecific information to render accurate WLCA calculations”</strong> 
+For example, the largest node is #Challenge 20 “lack of sitespecific information to render accurate WLCA calculations”
 with a darker green colour. 
 #Challenge 20 has branched out the largest number of edges, forming connections with 13 other challenges,
 establishing it as the core systemic challenge for BIM-based whole life carbon assessment globally.
@@ -211,7 +211,7 @@ with 4 fundamental features:
 </div>
 
 <div class="framework-card">
-<h3>🕸 Network Construction</h3>
+<h3>🕸 Network Creation</h3>
 
 <ul>
 <li>Weighted edges</li>
@@ -224,10 +224,9 @@ with 4 fundamental features:
 <h3>📈 Network Analytics</h3>
 
 <ul>
-<li>Centrality metrics</li>
-<li>Betweenness</li>
+<li>Centrality metrics: degree, betweenness, closeness, eigenvector</li>
 <li>Community detection</li>
-<li>Eigenvector analysis</li>
+<li>Network density</li>
 </ul>
 </div>
 
@@ -260,14 +259,6 @@ class="hero-button secondary"
 href="#">
 
 Paper (Coming Soon)
-
-</a>
-
-<a
-class="hero-button secondary"
-href="#">
-
-Citation
 
 </a>
 

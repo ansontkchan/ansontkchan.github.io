@@ -366,6 +366,12 @@ margin:1rem 0;
 
 }
 
+video{
+
+margin:1rem 0;
+
+}
+
 figcaption{
 
 font-size:.9rem;
@@ -460,4 +466,14 @@ margin:0;
 
 margin-bottom:.3rem;
 
+}
+
+.inline-link{
+    color:#0a66c2;
+    text-decoration:underline;
+    font-weight:500;
+}
+
+.inline-link:hover{
+    color:#084b91;
 }

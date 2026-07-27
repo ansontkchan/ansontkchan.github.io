@@ -1,5 +1,6 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import Projects from "../projects.astro";
 ---
 
 <Layout title="GREAT (Green Retrofit Evidence-grounded Agent Team): Benchmarking Multi-agent RAG System for Green Retrofit Planning">
@@ -15,21 +16,64 @@ GREAT (Green Retrofit Evidence-grounded Agent Team): Benchmarking Multi-agent RA
 </h1>
 
 <p class="lead">
-<h2>Operationalising Adam Smith’s “Division of Labour” principle within
-a multi-agent RAG framework</h2>
-
+<h2>Adam Smith’s “Division of Labour” principle in 3 human-AI decision system configurations</h2>
 <ul>
 <li>Case 1: a generic LLM with no prior domain knowledge (imagine a junior staff managing a company)</li>
-<li>Case 2: single-agent system with 1 big RAG corpus (imagine a boss running the company as a one-man-band)</li>
-<li>Case 3: multi-agent system with specific RAG corpora (imagine a team of experts collaborating in a company and sometimes arguing with each other)</li>
+<li>Case 2: a single-agent system with 1 big RAG corpus (imagine a boss running the company as a one-man-band)</li>
+<li>Case 3: a multi-agent system with specific RAG corpora (imagine a team of experts collaborating in a company and sometimes arguing with each other)</li>
 </ul>
+
+<h2>How GREAT works</h2>
+<video controls width="100%">
+  <source src="/research/great/demo.mp4" type="video/mp4">
+</video>
+
+<figcaption>
+Video 1. GREAT green retrofitting planning in 3 human-AI decision system configurations</figcaption>
+
+<h2>What does GREAT tell us about human-AI decision-making?</h2>
+
+GREAT tests whether a multi-agent RAG system will improve answer accuracy and usability.
+The task of green retrofitting planning is split into 4 functional AI agents in GREAT:
+<ul>
+<li>(1) Whole Life Carbon Assessment Agent: To conduct lifecycle carbon measurement</li>
+<li>(2) Energy Efficiency Agent: To carry out compliance check against key energy efficiency standards, such as ASHRAE</li>
+<li>(3) Cost Agent: To support cost, project phasing, and business case feasibility analysis</li>
+<li>(4) Building Research Establishment Environmental Assessment Method (BREEAM) Agent: To provide guidance on achieving top BREEAM certifcation results for a green retrofit project</li>
+</ul>
+
+
+The evaluation includes three phases (see Figure 1):
+<ul>
+<li>(a) A pilot study with construction experts</li>
+<li>(b) Quantitative benchmarking with a standard Question-and-Answer (QA) set</li>
+<li>(c) Qualitative user study with construction practitioners</li>
+</ul>
+
+<figure>
+<img
+src="/research/great/1-eval.png"
+class="project-figure"
+/>
+
+<figcaption>
+Figure 1. Evaluation with GREAT</figcaption>
+</figure>
 
 <h2>RAG is NOT machine learning: wrong tools for wrong problems</h2>
 <ul>
-<li>Machine Learning: </li>
-<li>Case 2: single-agent system with 1 big RAG corpus (imagine a boss running the company as a one-man-band)</li>
-<li>Case 3: multi-agent system with specific RAG corpora (imagine a team of experts collaborating in a company and sometimes arguing with each other)</li>
+<li>Machine Learning: Predicting unknown answers from data and model training (probabilistic: 𝑥% accuracy)</li>
+<li>RAG (Retrieval-Augmented Generation): Find the right answers from documents faithfully (binary: correct/wrong)</li>
 </ul>
+
+It is easy to mix up many AI concepts, and the most common misconception is positioning RAG as another type of machine learning model.
+In fact, RAG is a retrieval-based system that uses a knowledge base, such as a database of green building codes and standards, 
+to provide evidence-grounded answers and reduce hallucinations in LLMs.
+As illustrated in Figure 2, after receiving a query from users, the LLMs retrieve the most relevant documents by vector embedding, chunking and indexing.
+K-means clustering facilitates context prepartion when the LLMs are generating answers to the users.
+
+It is not a machine learning model, but rather a tool that can be used in conjunction with machine learning models to improve their performance.
+Answers already exist in the knowledge base, and RAG is used to retrieve them, rather than generating new answers from data and training a model to predict the <em>most probable answers.</em>
 
 
 <figure>
@@ -39,20 +83,56 @@ class="project-figure"
 />
 
 <figcaption>
-Figure 1. RAG workflow</figcaption>
+Figure 2. RAG workflow</figcaption>
 </figure>
 
+The research is undergoing user evaluation. Please contact the researcher at 
+&nbsp;
+<a
+    class="inline-link"
+    href="mailto:tkc30@cam.ac.uk?subject=GREAT%20Research%20Inquiry&body=Dear%20Anson,"> 
+    tkc30@cam.ac.uk
+</a>
 
+&nbsp;
+if you are interested in partcipating or learning more about the project.
 </p>
 
+<div class="button-group">
 
+<a
+class="hero-button"
+href="#">
+
+GitHub (Upon request)
+</a>
+
+<a
+class="hero-button secondary"
+href="#">
+
+Paper (Coming Soon)
+
+</a>
+
+</div>
 
 </section>
 
 <h2>Acknowledgements</h2>
 
 <p class="framework-intro">
-The authors would like to thank Dorsett Hospitality International Limited for funding this PhD research.
+This research is generously supported by
+&nbsp;
+<a
+    class="inline-link"
+    href="https://www.dorsetthospitality.com/" 
+    target="_blank" 
+    rel=""noopener noreferrer">
+    Dorsett Hospitality International Limited     
+</a>
+.
+
 Special thanks also go to the industry professionals and the academics who participated in the pilot study and user evaluation. 
 </p>
 

@@ -1,6 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import profile from "../assets/profile.jpg";
+
+import trust from "../assets/trust.png";
+import decision from "../assets/decision.png";
+import sust from "../assets/sust.png";
+import tech from "../assets/tech.png";
 ---
 
 <Layout title="Anson Chan">
@@ -43,48 +48,84 @@ import profile from "../assets/profile.jpg";
 
 <div class="vision-grid">
 
-  <article class="vision-item">
+<article class="vision-item">
+
+  <div class="logo-box">
+
+  <img 
+        src={trust.src}
+        alt="Trustworthy AI"
+        class="theme-logo"
+  />
+  </div>
+    
     <h3>Trustworthy AI</h3>
 
     <p>
-      Designing AI systems through evidence-grounded reasoning, multi-agent
-      architectures, and retrieval-augmented generation (RAG)
-      .
+      Designing advanced AI systems that are transparent and reliable.
     </p>
 
-    <a href="/research/great">Read more →</a>
+    <a href="/research/trustworthy-ai">Read more →</a>
   </article>
 
   <article class="vision-item">
+    
+    <div class="logo-box">
+
+    <img 
+        src={decision.src}
+        alt="Decision Intelligence"
+        class="theme-logo"
+    />
+    </div>
+    
     <h3>Decision Intelligence</h3>
 
     <p>
-      Developing data analysis tool that support complex decision-making through
-      system thinking and comparative studies.
+      Developing data analysis tools to support complex decision-making.
     </p>
 
-    <a href="/research/global-pathway">Read more →</a>
+    <a href="/research/decision-intelligence">Read more →</a>
   </article>
 
   <article class="vision-item">
+
+    <div class="logo-box">
+
+    <img 
+        src={sust.src}
+        alt="Sustainable Cities"
+        class="theme-logo"
+    />
+    </div>
+    
     <h3>Sustainable Cities</h3>
 
     <p>
-      Investigating how Digital Twins and BIM can support smart city developments, urban planning/renewal, and net zero pathways in buildings.
+      Investigating sustainability principles in buildings and cities.
     </p>
 
-    <a href="/research/dt-system">Read more →</a>
+    <a href="/research/sust-cities">Read more →</a>
   </article>
 
   <article class="vision-item">
+
+  <div class="logo-box">
+
+  <img 
+        src={tech.src}
+        alt="Technology & Society"
+        class="theme-logo"
+  />
+  </div>
+
     <h3>Technology & Society </h3>
 
     <p>
-      Understanding how technological innovation transforms industries,
-      disrupts institutions and reshapes societies from an evolutionary economics perspective.
+      Understanding how technologies reshape societies.
     </p>
 
-    <a href="/research/disruptive-innov">Read more →</a>
+    <a href="/research/tech-society">Read more →</a>
   </article>
 
 </div>
@@ -100,7 +141,6 @@ import profile from "../assets/profile.jpg";
 <a href="/writing" class="hero-button">
   Writing →
 </a>
-
 
 </section>
 

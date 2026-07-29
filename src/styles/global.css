@@ -352,7 +352,6 @@ height:100%;
 
 }
 
-
 .paper-card:hover{
 
 transform:translateY(-4px);
@@ -792,53 +791,47 @@ height:220px;
    Theme Hero
 =========================== */
 
-.theme-hero{
-
-display:grid;
-
-grid-template-columns:1fr 320px;
-
-align-items:center;
-
-column-gap:6rem;
-
-padding:4rem 0;
-
-border-bottom:1px solid #e5e5e5;
-
+.theme-hero {
+  display: grid;
+  /* Splits into 2 columns: left takes remaining space, right takes up to 320px */
+  grid-template-columns: 1fr auto; 
+  align-items: center;
+  column-gap: 4rem;
+  padding: 4rem 0;
+  border-bottom: 1px solid #e5e5e5;
 }
 
-.theme-hero-text p{
-
-max-width:620px;
-
-font-size:1.1rem;
-
-line-height:1.8;
-
-color:#444;
-
-margin-top:1rem;
-
+.theme-hero-text p {
+  max-width: 620px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+  margin-top: 1rem;
 }
 
-.theme-hero-image{
-
-display:flex;
-
-justify-content:flex-end;
-
+.theme-hero-image {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-.theme-hero-logo{
-
-width:220px;
-
-height:auto;
-
-opacity:.9;
-
+.theme-hero-logo {
+  width: 220px;
+  height: auto;
+  opacity: .9;
 }
+
+/* Mobile responsive fallback: stacks them on screens under 900px */
+@media (max-width: 900px) {
+  .theme-hero {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .theme-hero-image {
+    justify-content: flex-start; /* Aligns logo left on mobile layout */
+  }
+}
+
 
 /* ===========================
    Theme Layout
@@ -887,3 +880,64 @@ grid-template-columns:1fr;
 margin-bottom:2rem;
 
 }
+}
+
+/* ---------- Research Theme MVP ---------- */
+
+.theme-programme{
+    max-width:1100px;
+    margin:5rem auto;
+    padding:0 2rem;
+}
+
+.theme-row{
+    display:grid;
+    grid-template-columns:260px 1fr;
+    gap:4rem;
+    padding:3rem 0;
+    align-items:start;
+}
+
+.theme-row h2{
+    color:#2351d8;
+    margin:0;
+}
+
+.theme-intro{
+    margin:0 0 1.5rem;
+    font-size:1.05rem;
+    line-height:1.8;
+    color:#444;
+    max-width:700px;
+}
+
+.theme-links{
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+}
+
+.theme-links a{
+    font-size:1.1rem;
+    font-weight:600;
+    color:#111;
+    text-decoration:none;
+    transition:.2s;
+}
+
+.theme-links a:hover{
+    color:#2351d8;
+}
+
+.theme-programme hr{
+    border:none;
+    border-top:1px solid #ddd;
+}
+
+@media(max-width:900px){
+
+.theme-row{
+    grid-template-columns:1fr;
+    gap:1.5rem;
+}
+

@@ -1,43 +1,164 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+
+import trust from "../../assets/trust.png";
 ---
 
 <Layout title="Trustworthy AI">
 
-<section class="page">
+<section class="theme-hero">
 
-<h1>Trustworthy AI</h1>
+  <div class="theme-hero-text">
 
-<p>
-Designing AI systems that are transparent, interpretable, and reliable
-for establishing trust with users.
-</p>
+    <h1>Trustworthy AI</h1>
+
+    <p>
+      Designing advanced AI systems that are transparent and reliable.
+    </p>
+
+  </div>
+
+  <div class="theme-hero-image">
+
+    <img
+      src={trust.src}
+      alt="Trustworthy AI"
+      class="theme-hero-logo"
+    />
+
+  </div>
 
 </section>
 
-<section class="project-list">
+<div class="theme-grid">
+
+<div class="theme-sidebar">
+
+<h2>Independent Research</h2>
+
+</div>
+
+<div class="project-list">
 
 <div class="project">
+
+    <span class="research-status status-yellow">
+    Prototyping · 2026
+    </span>
+
+    <h2>
+    <a href="/research/neurosym">    
+    Deductive Reasoning in AI Agents: A Neuro-symbolic Planner for Green Retrofitting
+    </a>
+    </h2>
+
+    <p class="project-summary">
+    A new neuro-symbolic approach to re-route the knowledge base in AI agents back to human expertise rather than relying on historical data in algorithms.
+    </p>
+
+    <div class="button-group">
+
+    <a
+    class="hero-button"
+    href="#">
+
+    GitHub (Upon request)
+    </a>
+
+    <a
+    class="hero-button secondary"
+    href="#">
+
+    Paper (Coming Soon)
+    </a>
+
+    </div>
+
+</div>
+
+<div class="project">
+
+    <span class="research-status status-yellow">
+    User Evaluation · 2026
+    </span>
+
     <h2>
     <a href="/research/great">
-    GREAT (Green Retrofit Evidence-grounded Agent Team): Benchmarking Multi-agent RAG System for Green Retrofit Planning >
+    GREAT (Green Retrofit Evidence-grounded Agent Team): Benchmarking Multi-agent RAG System for Green Retrofit Planning
     </a>
     </h2>
-    <span class="year">2026 · User Evaluation</span>
+
+    <p class="project-summary">
+    Can a multi-agent RAG system develop and analyse green retrofitting plans better than single-agent and generic LLM systems? 
+    We ran experiment to find out.
+    </p>
+
+    <div class="button-group">
+
+    <a
+    class="hero-button"
+    href="#">
+
+    GitHub (Upon request)
+    </a>
+
+    <a
+    class="hero-button secondary"
+    href="#">
+
+    Paper (Coming Soon)
+    </a>
+
+    </div>
+
 </div>
 
-<hr>
+</div>
+
+<section class="theme-section">
+
+<div class="page">
+<h2>Collaborative Research</h2>
+</div>
+
+<div class="project-list">
 
 <div class="project">
+
+    <span class="research-status status-yellow">
+    Prototyping · 2026
+    </span>
+
     <h2>
-    <a href="#">    
-    Deductive Reasoning in AI Agents: A Neuro-symbolic Planner for Green Retrofitting>
+    <a href="#">
+    ESGPass: AI for Corporate ESG Intelligence
     </a>
     </h2>
-    <span class="year">2026· Coming soon</span>
+
+    <p class="project-summary">
+    The first platform offering interpretable ESG report generation
+    to automate compliance for CSRD, ISSB, GRI, and TCFD with precision, transparency, and trust by design.
+    </p>
+   
+    <p>Contributions:</p>
+    <ul>
+    <li>Stakeholder interviews</li>
+    <li>ESG reporting frameworks consolidation</li>
+    <li>LLM workflow designs</li>
+    </ul>
+
+    <div class="button-group">
+    <a
+    class="hero-button"
+    href="https://esgpass.com/#frameworks">
+    ESGPass Website →
+    </a>
+    </div>
+
+</div>
 
 </div>
 
 </section>
-
+</div>
 </Layout>

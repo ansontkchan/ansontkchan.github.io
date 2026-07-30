@@ -1,0 +1,359 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import tech from "../../assets/tech.png";
+---
+
+<Layout title="Technology & Society">
+  <main class="page-container">
+    
+    <!-- HERO SECTION -->
+    <section class="theme-hero-section">
+      <div class="hero-content">
+        <h1>Technology & Society</h1>
+        <p>
+         Understanding how technologies reshape societies.
+        </p>
+      </div>
+
+      <div class="hero-image-container">
+        <img
+          src={tech.src}
+          alt="Technology & Society"
+          class="hero-icon"
+        />
+      </div>
+    </section>
+
+    <!-- STICKY SUB-NAV BAR -->
+    <nav class="sub-nav-bar">
+      <div class="sub-nav-links">
+        <a href="#independent" class="sub-nav-item">
+          Independent Research <span class="count">2</span>
+        </a>
+        <a href="#collaborative" class="sub-nav-item">
+          Collaborative Research <span class="count">2</span>
+        </a>
+      </div>
+    </nav>
+
+    <!-- SECTION 1: Independent Research (Clean: No Tags) -->
+    <div class="content-grid" id="independent">
+      <aside class="sidebar">
+        <h2>Independent Research</h2>
+      </aside>
+
+      <div class="project-list">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <h3>
+            <a href="/research/disruptive-innov">    
+              Disrupting the Undisruptable: Agentic AI Innovations in Construction
+            </a>
+          </h3>
+          <p>
+            The Internet, Blockchain, VR/XR, AI, and... Many disruptive technologies enter the market but some markets are inherently more undisruptable, why?
+          </p>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <h3>
+            <a href="/research/dt-system">
+              Convergence of Digital Twin and Human-Data Interaction: Advancing Customer Experience in the Built Environment
+            </a>
+          </h3>
+          <p>
+            Where is the human in a Digital Twin? We proposed 26 use cases across 3 dimensions to enhance human-data-interaction in Digital Twins.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 2: Collaborative Research (Structured Bullets) -->
+    <div class="content-grid" id="collaborative">
+      <aside class="sidebar">
+        <h2>Collaborative Research</h2>
+      </aside>
+
+      <div class="project-list">
+        
+    <!-- outsider wages -->
+    <div class="project-card">
+    <h3>
+    <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7140368" target="_blank" rel="noopener noreferrer">
+    The Outsider’s Wager: Disciplinary Distance Buys Exceptional Science and Costs Scientific Careers
+    </a>
+    </h3>
+    
+    <p>
+    Using OpenAlex (238,689 researchers; 1,045,441 researcher-periods), we estimated within-researcher models with non-parametric volume fixed effects and find that the two acts have opposite consequences.
+    </p>
+  
+    <ul class="structured-bullets">
+    <li>
+      <strong>Role & Affiliation:</strong> Research Fellow, 
+      <a href="https://llmplus.ai/" target="_blank" rel="noopener noreferrer" class="external-link"> LLM+</a>, 
+      University of Cambridge (2026).
+    </li>
+    <li>
+      <strong>Project Scope:</strong> Modelling the relationships between outsiderness and scientific career.
+    </li>
+    <li>
+      <strong>Key Contributions:</strong> Data collection and literature reviews on theories.
+    </li>
+    </ul>
+    
+    </div>
+
+    <!-- 3.HHWei-SmarCity -->
+<div class="project-card">
+    <h3>
+    <a href="https://www.cepu.gov.hk/doc/en/research_report(PDF)/2021.A6.185.21D_Final%20Report_Dr%20Wei.pdf" target="_blank" rel="noopener noreferrer">
+    Towards People-centric Smart City Development: Investigating the Citizens' Preferences and Expectations about
+    Smart-city Services in Hong Kong
+    </a>
+    </h3>
+    
+    <p>
+    How can we effectively prioritise the wide range of Smart City services across the 
+    seven dimensions based on the preferences and expectations of citizens’ subpopulations?
+    </p>
+    
+    <ul class="structured-bullets">
+    <li><strong>Role & Affiliation:</strong> Part-time Research Assistant, 
+        Hong Kong SAR Public Policy Research Funding Scheme; 
+        Principal Investigator: <a href="https://www.polyu.edu.hk/cmi/people/academic-staff/dr-wei-hsi-hsien--johnny/" target="_blank" 
+        rel="noopener noreferrer" class="external-link"> Dr WEI Hsi Hsien </a>, the Hong Kong Polytechnic University 
+        (2021 – 2023).
+    </li>
+    
+    <li><strong>Project Scope:</strong> Examining the associations between citizens’ preferences for and
+expectations of Smart City services via statistical analysis.</li>
+    <li><strong>Key Contributions:</strong> Collected citizens’ basic information on demographic characteristics and
+digital literacy, followed by their preferences and expectations for the 48 selected Smart City services in Hong Kong.</li>
+    </ul>
+        
+    </div>
+    </div>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  /* =========================================
+     1. PAGE LAYOUT & GEOMETRY
+     ========================================= */
+  .page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem 4rem;
+  }
+
+  /* =========================================
+     2. HERO SECTION (Side-by-Side)
+     ========================================= */
+  .theme-hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    padding: 4rem 0 1.5rem;
+  }
+
+  .hero-content {
+    flex: 1;
+    max-width: 650px;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: #111;
+  }
+
+  .hero-content p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .hero-image-container {
+    flex-shrink: 0;
+    width: 240px;
+  }
+
+  .hero-icon {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  /* =========================================
+     3. STICKY SUB-NAVIGATION BAR
+     ========================================= */
+  .sub-nav-bar {
+    position: sticky;
+    top: 0;
+    background: rgba(250, 248, 245, 0.95); /* Slight transparency */
+    backdrop-filter: blur(10px);           /* Blurs content behind it */
+    z-index: 100;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 1rem 0;
+    margin-bottom: 3.5rem;
+  }
+
+  .sub-nav-links {
+    display: flex;
+    gap: 2.5rem;
+  }
+
+  .sub-nav-item {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #666;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.2s;
+  }
+
+  .sub-nav-item:hover {
+    color: #0067c0;
+  }
+
+  .sub-nav-item .count {
+    font-size: 0.75rem;
+    background: #e5e5e5;
+    color: #555;
+    padding: 0.1rem 0.4rem;
+    border-radius: 10px;
+    font-weight: 500;
+  }
+
+  /* =========================================
+     4. CONTENT GRIDS (Sidebar + List)
+     ========================================= */
+  .content-grid {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 4rem;
+    padding-bottom: 2rem;       
+    margin-bottom: 2rem;        
+    border-bottom: 1px solid #e5e5e5; 
+    scroll-margin-top: 6rem; /* Ensures sticky nav doesn't cover title when clicked */
+  }
+
+  .content-grid:last-of-type {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .sidebar h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #222;
+    position: sticky;
+    top: 5rem;
+    margin: -0.2rem 0 0 0;
+  }
+
+  /* =========================================
+     5. PROJECT CARDS & TYPOGRAPHY
+     ========================================= */
+  .project-card {
+    padding: 2.5rem 0;
+    border-top: 1px solid #e5e5e5;
+  }
+  
+  .project-card:first-child {
+    border-top: none;
+    padding-top: 0;
+  }
+
+  .project-card h3 {
+    margin: 0 0 0.75rem;
+  }
+
+  .project-card h3 a {
+    color: #0067c0;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+
+  .project-card h3 a:hover {
+    text-decoration: underline;
+  }
+
+  .project-card p {
+    color: #444;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin: 0;
+  }
+
+  /* =========================================
+     6. COLLAB LISTS & LINKS (New Updates)
+     ========================================= */
+  .structured-bullets {
+    margin: 1.25rem 0 0 0;
+    padding-left: 1.2rem;
+    list-style-type: square;
+  }
+
+  .structured-bullets li {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+  }
+
+  .structured-bullets strong {
+    color: #222;
+    font-weight: 600;
+  }
+
+  /* The Specific "Academic Blue" Link Style for LLM+ */
+  .external-link {
+    color: #0067c0;  /* Matches Main Title Blue exactly */
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .external-link:hover {
+    text-decoration: underline;
+    color: #004b99;
+  }
+
+  /* =========================================
+     7. MOBILE RESPONSIVE
+     ========================================= */
+  @media (max-width: 900px) {
+    .theme-hero-section {
+      flex-direction: column-reverse; /* Stacks image on top */
+      align-items: flex-start;
+      gap: 2rem;
+      padding: 3rem 0 1rem;
+    }
+
+    .content-grid {
+      grid-template-columns: 1fr; /* Stacks sidebar above list */
+      gap: 1rem;
+    }
+
+    .sidebar h2 {
+      position: static;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+</style>
+

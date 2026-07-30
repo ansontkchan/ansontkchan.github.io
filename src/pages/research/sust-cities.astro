@@ -1,24 +1,24 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import trust from "../../assets/trust.png";
+import sust from "../../assets/sust.png";
 ---
 
-<Layout title="Trustworthy AI">
+<Layout title="Sustainable Cities">
   <main class="page-container">
     
     <!-- HERO SECTION -->
     <section class="theme-hero-section">
       <div class="hero-content">
-        <h1>Trustworthy AI</h1>
+        <h1>Sustainable Cities</h1>
         <p>
-          Designing advanced AI systems that are transparent and reliable.
+          Investigating sustainability principles in buildings and cities.
         </p>
       </div>
 
       <div class="hero-image-container">
         <img
-          src={trust.src}
-          alt="Trustworthy AI"
+          src={sust.src}
+          alt="Sustainable Cities"
           class="hero-icon"
         />
       </div>
@@ -31,12 +31,13 @@ import trust from "../../assets/trust.png";
           Independent Research <span class="count">2</span>
         </a>
         <a href="#collaborative" class="sub-nav-item">
-          Collaborative Research <span class="count">2</span>
+          Collaborative Research <span class="count">3</span>
         </a>
       </div>
     </nav>
 
     <!-- SECTION 1: Independent Research (Clean: No Tags) -->
+    
     <div class="content-grid" id="independent">
       <aside class="sidebar">
         <h2>Independent Research</h2>
@@ -46,94 +47,122 @@ import trust from "../../assets/trust.png";
         <!-- Project 1 -->
         <div class="project-card">
           <h3>
-            <a href="/research/neurosym">    
-              Deductive Reasoning in AI Agents: A Neuro-symbolic Planner for Green Retrofitting
-            </a>
+            <a href="https://docs.lib.purdue.edu/cgi/viewcontent.cgi?article=1740&context=cib-conferences" target="_blank" rel="noopener noreferrer">    
+           What is Stopping Building Information Modeling (BIM)-based Whole Life Carbon Assessment of Buildings in Hong Kong? </a>
           </h3>
           <p>
-            A new neuro-symbolic approach to re-route the knowledge base in AI agents back to human expertise rather than relying on historical data in algorithms.
+          How do researchers, construction professionals, and experts perceive BIM-based WLCA differently and why? 
+          We collected data from 80 Hong Kong-based practitioners to conduct statistical and factor analysis.
           </p>
         </div>
+
 
         <!-- Project 2 -->
         <div class="project-card">
           <h3>
-            <a href="/research/great">
-              GREAT (Green Retrofit Evidence-grounded Agent Team): Benchmarking Multi-agent RAG System
+            <a href="https://ascelibrary.org/doi/10.1061/9780784486436.083" target="_blank" rel="noopener noreferrer">    
+            Digital Twins for Sustainable Hospitality Facilities Management: A Review and Empirical Investigation
             </a>
           </h3>
           <p>
-            Can a multi-agent RAG system develop and analyse green retrofitting plans better than single-agent and generic LLM systems? 
-            We ran experiments to find out.
+          How can we enhance sustainability facilities management in hotels without sacrificing guests' experiences?
+          We investigated the role of Digital Twin in assisting hoteliers to address sustainability challenges.
           </p>
         </div>
-      </div>
+        </div>
     </div>
 
-    <!-- SECTION 2: Collaborative Research (Structured Bullets) -->
+<!-- SECTION 2: Collaborative Research (Structured Bullets) -->
     <div class="content-grid" id="collaborative">
       <aside class="sidebar">
         <h2>Collaborative Research</h2>
       </aside>
 
       <div class="project-list">
-        
-    <!-- ESGPass Card -->
-    <div class="project-card">
+    
+<!-- 1. XDT -->
+    <div class="project-card">      
     <h3>
-    <a href="https://esgpass.com/#frameworks" target="_blank" rel="noopener noreferrer">
-    ESGPass: AI for Corporate ESG Intelligence
+    <a href="https://www.mdpi.com/2075-5309/16/10/1856" target="_blank" rel="noopener noreferrer">
+    Explainable Digital Twins for Urban Drainage Resilience: A Multi-Source TCN-LSTM Framework for Real-Time Water Flow Prediction
     </a>
     </h3>
-    
+
     <p>
-    The first platform offering interpretable ESG report generation to automate compliance with precision, transparency, and trust by design.
+    Urban drainage systems (UDSs) are increasingly challenged by short-duration extreme rainfall, aging infrastructure, and rising surcharge risk. 
+    Physics-based hydrodynamic models are widely used for system assessment, but their high computational cost limits real-time operational prediction.
+    An explainable Digital Twin is developed for a separate sewer network in the Yangtze River Delta, China. 
+  </p>
+    
+    <ul class="structured-bullets">
+    <li><strong>Role & Affiliation:</strong> Co-author, University of Cambridge and Zhejiang University (2026).</li>
+    <li><strong>Project Scope:</strong> A hybrid TCN-LSTM model was developed to predict water level and surcharge risk probability at 15–60 min lead times. 
+    A surrogate-based SHAP module was used to explain model predictions at the node and subcatchment scales.</li>
+    <li><strong>Key Contributions:</strong> Assisted in designing Explainable Digital Twins.</li>
+    </ul>
+    
+    </div>
+
+<!-- 2.SunYi-Exergame -->
+    <div class="project-card">
+    <h3>
+    <a href="https://www.ntu.edu.sg/arise/research-focus/health-coaching---lifestyleintervention/applying-immersive-projector-with-exergames-a-pilot-study-for-older-adults-in-singapore" target="_blank" rel="noopener noreferrer">
+    Applying Immersive Projector with Exergames: A Pilot Study for Older Adults in Singapore
+    </a>
+    </h3>
+
+    <p>
+    In collaboration with Lion Befrienders Singapore (LB), we proposes using exergames to promote a sustainable lifestyle in Singapore and Hong Kong's aging population.
     </p>
   
     <ul class="structured-bullets">
-    <li>
-      <strong>Role & Affiliation:</strong> Co-Founder, 
-      <a href="https://llmplus.ai/" target="_blank" rel="noopener noreferrer" class="external-link"> LLM+</a>, 
-      University of Cambridge (Ongoing research).
-    </li>
-    <li>
-      <strong>Project Scope:</strong> Automated compliance frameworks for corporate CSRD, ISSB, GRI, and TCFD report generation.
-    </li>
-    <li>
-      <strong>Key Contributions:</strong> Conducted stakeholder interviews, consolidated global ESG reporting frameworks, and designed custom end-to-end LLM agent workflows.
-    </li>
-    </ul>
+    <li><strong>Role & Affiliation:</strong> Part-time Research Assistant, 
+        Nanyang Technological University/Hong Kong Polytechnic University; 
+        Co-Principal Investigator: <a href="https://www.polyu.edu.hk/cmi/people/academic-staff/dr-sun-yi/" target="_blank" 
+        rel="noopener noreferrer" class="external-link"> Dr SUN Yi </a>, the Hong Kong Polytechnic University (2023-2024).
     
-    </div>
+    </li>
+    
+    <li><strong>Project Scope:</strong> Creating serious exergames with physical activities and data-mining capabilities to engage the older adults in daily activities in both the senior centre settings and home settings.</li>
+    <li><strong>Key Contributions:</strong> Carried out immersive exergame experiments and questionnaire surveys with the elderly.</li>
+    </ul>
 
-    <!-- 2. OSDG -->
-    <div class="project-card">
+  </div>
+  
+<!-- 3.SunYi-PersonEnvtFit -->
+<div class="project-card">
     <h3>
-    <a href="https://osdg.ai/" target="_blank" rel="noopener noreferrer">
-    United Nations OSDG: Global Sustainability Intelligence
+    <a href="https://www.cepu.gov.hk/doc/en/research_report(PDF)/2019.A6.145.19D_Final%20Report_Dr%20Sun.pdf" target="_blank" rel="noopener noreferrer">
+    Effects of Environment-related Experiences on Older Person’s Well-being in Hong Kong’s “Double Ageing” Context:
+    A Person–environment Perspective
     </a>
     </h3>
     
     <p>
-    How do science, technology and public policy contribute to Sustainable Development Goals?
-    OSDG is a free and open-source tool that assigns SDG labels to your inputs.     
+    A conceptual framework that articulates the co-constitution of socio-spatial
+  experience, psychological experience, and well-being is developed to explain the mechanism underlying the
+  associations between socio-spatial experience and well-being.
     </p>
-          
-    <ul class="structured-bullets">
-    <li><strong>Role & Affiliation:</strong> Volunteer Data Scientist,
-    <a href="https://sdgailab.org/" target="_blank" rel="noopener noreferrer" class="external-link"> SDG AI Lab</a>, 
-    led by Dr Nuria Bautista Puig (2020 – 2023).</li>
-   
-    <li><strong>Project Scope:</strong> Mapped public and academic research documents directly   to the UN 2030 SDGs.</li>
-    <li><strong>Key Contributions:</strong> Co-developed OSDG with over 2,500 online volunteers for 17 SDG corpus in over 1,000+ international research papers.</li>
-    </ul>
     
+    <ul class="structured-bullets">
+    <li><strong>Role & Affiliation:</strong> Part-time Research Assistant, 
+        Hong Kong SAR Public Policy Research Funding Scheme; 
+        Principal Investigator: <a href="https://www.polyu.edu.hk/cmi/people/academic-staff/dr-sun-yi/" target="_blank" 
+        rel="noopener noreferrer" class="external-link"> Dr SUN Yi </a>, the Hong Kong Polytechnic University 
+        (2020 – 2021).
+    </li>
+    
+    <li><strong>Project Scope:</strong> Applying a mixed-method approach to
+      assess the effects of socio-spatial and psychological experiences on well-being, and
+      examine the mediating effects of psychological experiences.</li>
+    <li><strong>Key Contributions:</strong> Collected empirical data from 501 questionnaires within 2 categories of Tertiary Planning Units in Hong Kong. 
+      Assisted in data pre-processing before research analysis.</li>
+    </ul>
+        
     </div>
-
     </div>
-
-</div>
-</main>
+    </div>
+  </main>
 </Layout>
 
 <style>
@@ -353,4 +382,3 @@ import trust from "../../assets/trust.png";
     }
   }
 </style>
-

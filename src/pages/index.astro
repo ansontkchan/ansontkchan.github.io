@@ -10,138 +10,345 @@ import tech from "../assets/tech.png";
 
 <Layout title="Anson Chan">
 
-<section class="hero">
+  <main class="homepage-container">
 
-<div class="hero-text">
+    <!-- 1. HERO SECTION -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Designing Trustworthy <span class="no-break">Human–AI</span> Decision Systems</h1>
+        
+        <p class="affiliation">
+          <strong>PhD Researcher</strong> · <strong>University of Cambridge</strong> · <strong>Department of Engineering</strong>
+        </p>
 
-<h1>Designing Trustworthy Human–AI Decision Systems</h1>
+        <p class="bio-text">
+          I study how humans and increasingly capable AI systems can make trustworthy decisions together.
+          My current research uses green retrofitting as the real-world laboratory for designing trustworthy human-AI decision systems
+          in complex environments, extending my previous research on smart cities and sustainable buildings. 
+          
+          Ultimately, I am interested in how people should think, decide, and govern
+          in an age of increasingly capable AI.
+        </p>
+        
+        <a href="/research" class="hero-button">
+          Current Research →
+        </a>
+      </div>
 
-<p class="affiliation">
-  <strong>PhD Researcher</strong> · <strong>University of Cambridge</strong> · <strong>Department of Engineering</strong>
-</p>
+      <div class="hero-photo">
+        <img src={profile.src} alt="Portrait of Anson Chan" class="profile-photo"/>
+      </div>
+    </section>
 
-<p>
-  I study how humans and increasingly capable AI systems can make trustworthy decisions together.
-  My current research uses green buildings and smart cities as the real-world laboratory for designing
-  trustworthy human–AI decision systems. Ultimately, I am interested in how people should think, decide, and govern
-  in an age of increasingly capable AI.
-</p>
-<a href="/research" class="hero-button">
-  Current Research →
-</a>
+    <!-- 2. RESEARCH INTERESTS -->
+    <section class="section-block">
+      <!-- 🛠️ UNIFIED HEADER CLASS -->
+      <h2 class="section-title">Research Interests</h2>
 
-</div>
+      <div class="vision-grid">
+        
+        <!-- Card 1 -->
+        <article class="vision-item">
+          <div class="logo-box">
+            <img src={trust.src} alt="Trustworthy AI" class="theme-logo"/>
+          </div>
+          <h3>Trustworthy AI</h3>
+          <p>Designing advanced AI systems that are transparent and reliable.</p>
+          <!-- 🛠️ UNIFIED BLUE LINK -->
+          <a href="/research/trustworthy-ai" class="blue-link">Read more →</a>
+        </article>
 
-<div class="hero-photo">
-  	<img
-    src={profile.src}
-    alt="Portrait of Anson Chan"
-    class="profile-photo"
-	/>
-</div>
+        <!-- Card 2 -->
+        <article class="vision-item">
+          <div class="logo-box">
+            <img src={decision.src} alt="Decision Intelligence" class="theme-logo"/>
+          </div>
+          <h3>Decision Intelligence</h3>
+          <p>Developing data analysis tools to support decision-making.</p>
+          <a href="/research/decision-intelligence" class="blue-link">Read more →</a>
+        </article>
 
-</section>
+        <!-- Card 3 -->
+        <article class="vision-item">
+          <div class="logo-box">
+            <img src={sust.src} alt="Sustainable Cities" class="theme-logo"/>
+          </div>
+          <h3>Sustainable Cities</h3>
+          <p>Investigating sustainability principles in buildings and cities.</p>
+          <a href="/research/sust-cities" class="blue-link">Read more →</a>
+        </article>
 
-<section class="research-vision">
+        <!-- Card 4 -->
+        <article class="vision-item">
+          <div class="logo-box">
+            <img src={tech.src} alt="Technology & Society" class="theme-logo"/>
+          </div>
+          <h3>Technology & Society</h3>
+          <p>Understanding how technologies reshape societies.</p>
+          <a href="/research/tech-society" class="blue-link">Read more →</a>
+        </article>
 
-<h2>Research Themes</h2>
+      </div>
+    </section>
 
-<div class="vision-grid">
+    <!-- 3. TEACHING SECTION -->
+    <section class="section-block">
+      <!-- 🛠️ SAME HEADER CLASS -->
+      <h2 class="section-title">Teaching</h2>
 
-<article class="vision-item">
+      <div class="teaching-grid">
+        
+        <div class="teaching-row">
+          <div class="teach-date">Apr 2026 – Now</div>
+          <div class="teach-content">
+            <h3>Lead Tutor</h3>
+            <p>
+              <!-- 🛠️ SAME BLUE LINK CLASS -->
+              <a href="https://advanceonline.cam.ac.uk/" target="_blank" class="blue-link">
+                Cambridge Advance Online: Strategic Risk Management in the Age of AI
+              </a>
+            </p>
+          </div>
+        </div>
 
-  <div class="logo-box">
+        <div class="teaching-row">
+          <div class="teach-date">Mar 2026</div>
+          <div class="teach-content">
+            <h3>Guest Lecturer</h3>
+            <p>
+              Cambridge MBA/EMBA & Students from Renmin University of China/Beihang University
+            </p>
+          </div>
+        </div>
 
-  <img 
-        src={trust.src}
-        alt="Trustworthy AI"
-        class="theme-logo"
-  />
-  </div>
-    
-    <h3>Trustworthy AI</h3>
+      </div>
+    </section>
 
-    <p>
-      Designing advanced AI systems that are transparent and reliable.
-    </p>
+    <!-- 4. MUSINGS -->
+    <section class="section-block">
+      <h2 class="section-title">Musings</h2>
+      <p class="personal-text">
+        Beyond my research, I write about technologies, philosophy, cities, and ideas that shape humanities.
+      </p>
+      <a href="/writing" class="hero-button">
+        Writing →
+      </a>
+    </section>
 
-    <a href="/research/trustworthy-ai">Read more →</a>
-  </article>
-
-  <article class="vision-item">
-    
-    <div class="logo-box">
-
-    <img 
-        src={decision.src}
-        alt="Decision Intelligence"
-        class="theme-logo"
-    />
-    </div>
-    
-    <h3>Decision Intelligence</h3>
-
-    <p>
-      Developing data analysis tools to support decision-making.
-    </p>
-
-    <a href="/research/decision-intelligence">Read more →</a>
-  </article>
-
-  <article class="vision-item">
-
-    <div class="logo-box">
-
-    <img 
-        src={sust.src}
-        alt="Sustainable Cities"
-        class="theme-logo"
-    />
-    </div>
-    
-    <h3>Sustainable Cities</h3>
-
-    <p>
-      Investigating sustainability principles in buildings and cities.
-    </p>
-
-    <a href="/research/sust-cities">Read more →</a>
-  </article>
-
-  <article class="vision-item">
-
-  <div class="logo-box">
-
-  <img 
-        src={tech.src}
-        alt="Technology & Society"
-        class="theme-logo"
-  />
-  </div>
-
-    <h3>Technology & Society </h3>
-
-    <p>
-      Understanding how technologies reshape societies.
-    </p>
-
-    <a href="/research/tech-society">Read more →</a>
-  </article>
-
-</div>
-</section>
-
-<section class="research-vision">
-
-<h2>Musings</h2>
-
-<p class="personal">
-  Beyond my research, I write about technologies, philosophy, cities, and ideas that shape humanities.
-</p>
-<a href="/writing" class="hero-button">
-  Writing →
-</a>
-
-</section>
-
+  </main>
 </Layout>
+
+<style>
+  /* =========================================
+     1. PAGE LAYOUT (Standardized 1100px)
+     ========================================= */
+  .homepage-container {
+    max-width: 1100px; /* 🎯 MATCHES YOUR RESEARCH PAGES */
+    margin: 0 auto;
+    padding: 0 2rem 6rem;
+  }
+
+  .section-block {
+    padding: 4rem 0;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  
+  .section-block:last-child {
+    border-bottom: none;
+  }
+
+  /* =========================================
+     2. HERO SECTION
+     ========================================= */
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Stops "floating apart" */
+    gap: 5rem;
+    padding: 5rem 0 5rem;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  .hero-text {
+    flex: 1;
+    max-width: 680px;
+  }
+
+  .hero-text h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin-bottom: 1.5rem;
+    color: #111;
+  }
+
+  .affiliation {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+
+  .bio-text {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 2rem;
+  }
+
+  .hero-button {
+    display: inline-block;
+    padding: 0.8rem 1.6rem;
+    font-weight: 600;
+    background: #111;
+    color: white;
+    border-radius: 6px;
+    transition: background 0.2s;
+  }
+  .hero-button:hover { background: #333; }
+
+  .hero-photo { flex-shrink: 0; }
+  .profile-photo {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+  }
+
+  /* =========================================
+     3. UNIFIED HEADERS & LINKS (THE FIX)
+     ========================================= */
+  .section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    color: #111;
+    letter-spacing: -0.02em;
+  }
+
+  .blue-link {
+    color: #0067c0;            /* 🎯 ACADEMIC BLUE */
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 1px solid transparent;
+    transition: all 0.2s ease;
+  }
+
+  .blue-link:hover {
+    color: #004b99;
+    text-decoration: underline;
+  }
+
+  /* =========================================
+     4. RESEARCH GRID
+     ========================================= */
+   .vision-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem; 
+  }
+
+  .vision-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo-box {
+    width: 100%;
+    aspect-ratio: 1/1; 
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    transition: transform 0.2s;
+  }
+  
+  .vision-item:hover .logo-box { transform: translateY(-4px); }
+
+  .theme-logo {
+    max-width: 160%;
+    max-height: 160%;
+    object-fit: contain;
+  }
+
+  .vision-item h3 {
+    font-size: 1.05rem;        /* 🎯 REWORKED: Brought down slightly to physically fit the containers */
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #111;
+    white-space: nowrap;       /* 🛑 BLOCKER: Explicitly tells the browser it is illegal to break to line 2 */
+    width: 100%;               /* Ensures text metrics anchor correctly */
+    overflow: visible;         /* Allows characters to sit cleanly if they touch the boundary edge */
+  }
+
+  .vision-item p {
+    font-size: 0.92rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+  }
+
+  /* =========================================
+     5. TEACHING TIMELINE
+     ========================================= */
+  .teaching-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .teaching-row {
+    display: grid;
+    grid-template-columns: 140px 1fr; /* Fixed date width */
+    gap: 2rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+    align-items: baseline;
+  }
+
+  .teaching-row:last-child { border-bottom: none; }
+
+  .teach-date {
+    font-family: monospace;
+    font-size: 0.9rem;
+    color: #888;
+  }
+
+  .teach-content h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0 0 0.3rem 0;
+  }
+
+  .teach-content p {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .personal-text {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 2rem;
+    max-width: 600px;
+  }
+
+  /* MOBILE */
+  @media (max-width: 900px) {
+    .hero { flex-direction: column-reverse; align-items: flex-start; gap: 2rem; }
+    .vision-grid { grid-template-columns: repeat(2, 1fr); }
+    .teaching-row { grid-template-columns: 1fr; gap: 0.5rem; }
+  }
+
+  .no-break {
+    white-space: nowrap;
+  }
+</style>

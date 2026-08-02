@@ -31,7 +31,7 @@ import decision from "../../assets/decision.png";
           Independent Research <span class="count">2</span>
         </a>
         <a href="#collaborative" class="sub-nav-item">
-          Collaborative Research <span class="count">2</span>
+          Collaborative Research <span class="count">3</span>
         </a>
       </div>
     </nav>
@@ -46,6 +46,7 @@ import decision from "../../assets/decision.png";
       <div class="project-list">
         <!-- Project 1 -->
         <div class="project-card">
+        <span class="mono-date">2026</span>
           <h3>
             <a href="/research/global-pathway">    
             A Global Pathway to Net Zero Buildings:
@@ -62,6 +63,7 @@ import decision from "../../assets/decision.png";
 
         <!-- Project 2 -->
         <div class="project-card">
+        <span class="mono-date">2025</span>
           <h3>
             <a href="https://github.com/ansontkchan/Global_Female_Wanderers_Nomad_TravelApp">    
             Nomad:
@@ -94,7 +96,8 @@ import decision from "../../assets/decision.png";
       <div class="project-list">
     
 <!-- 1. Oxford Net Zero Tracker -->
-    <div class="project-card">      
+    <div class="project-card">
+    <span class="mono-date">2023-2024</span>      
     <h3>
     <a href="https://zerotracker.net/" target="_blank" rel="noopener noreferrer">
     Net Zero Tracker
@@ -118,10 +121,41 @@ import decision from "../../assets/decision.png";
     <li><strong>Key Contributions:</strong> Assisted in merging LLMs and expert-level net zero knowledge to enable reporting in COP28 and COP29, education,
     fact-checking, research and benchmarking</li>
     </ul>
-        </div>
+    </div>
 
-<!-- 2.Esther Yung Elderly -->
+<!-- 2. FanYing Urban Transformation for Ageing Buildings -->
     <div class="project-card">
+    <span class="mono-date">2023-2024</span> 
+      <h3>
+    <a href="https://sites.google.com/view/ppr-/home?authuser=0" target="_blank" rel="noopener noreferrer">
+    Tackling Ageing Buildings and Facilitating Urban Transformation:
+    Optimization of Floor Area Ratio Regulation in Hong Kong’s Urban Renewal Process
+    </a>
+    </h3>
+
+    <p>
+    Urban decay and land shortages in Hong Kong requires redevelopment momentum.
+    However, what incentives and effective policy tools should be formulated under the current floor area ratio (FAR) regulations?
+    </p>
+    
+    <ul class="structured-bullets">
+    <li><strong>Role & Affiliation:</strong> Research Collaborator,
+    Hong Kong SAR Public Policy Research Funding Scheme; 
+    Principal Investigator: <a href="https://www.polyu.edu.hk/cmi/people/academic-staff/dr-ying-fan/" target="_blank" 
+    rel="noopener noreferrer" class="external-link"> Dr FAN Ying </a>, the Hong Kong Polytechnic University 
+        (2021 – 2023).
+    </li>
+    <li><strong>Project Scope:</strong> Analysing net zero targets in all nations that are parties to the UNFCCC, 
+    every region in the largest 25 emitting nations, 
+    all cities with more than 500,000 inhabitants, and the world's largest 2,000 publicly listed companies by annual revenue.</li>
+    <li><strong>Key Contributions:</strong> Assisted in merging LLMs and expert-level net zero knowledge to enable reporting in COP28 and COP29, education,
+    fact-checking, research and benchmarking</li>
+    </ul>
+    </div>
+
+<!-- 3.Esther Yung Elderly -->
+    <div class="project-card">
+    <span class="mono-date">2019-2022</span>
     <h3>
     <a href="https://www.sciencedirect.com/science/article/pii/S0264275125000381" target="_blank" rel="noopener noreferrer">
     Considerations of Planning Community Facilities and Elderly Neighbourhood Satisfaction in Urban Old District
@@ -136,8 +170,7 @@ import decision from "../../assets/decision.png";
     <li><strong>Role & Affiliation:</strong> Part-time Research Assistant, 
         Hong Kong University Grants Committee General Research Fund; 
         Principal Investigator: <a href="https://www.polyu.edu.hk/cmi/people/academic-staff/dr-esther-hk-yung/" target="_blank" 
-        rel="noopener noreferrer" class="external-link"> Dr Esther YUNG </a>, the Hong Kong Polytechnic University 
-        (2019 – 2022).
+        rel="noopener noreferrer" class="external-link"> Dr Esther YUNG </a>, the Hong Kong Polytechnic University.
     </li>
     
     <li><strong>Project Scope:</strong> Applying spatial analysis and qualitative research methods to analyse the complex 
@@ -367,4 +400,19 @@ import decision from "../../assets/decision.png";
       margin-bottom: 1.5rem;
     }
   }
+.mono-date {
+  font-family: monospace; /* Technical/Data feel (Like Google Research) */
+  font-size: 0.85rem;     /* Small and subtle */
+  color: #888;            /* Grey (Low visual weight) */
+  font-weight: 500;
+  display: block;         /* Forces it to its own line */
+  margin-bottom: 0.4rem;  /* Tights gap between Date and Title */
+  letter-spacing: 0.05em;
+}
+
+/* Optional: Fix for that long title to make it look less "ugly" */
+.project-card h3 {
+  line-height: 1.3; /* Tightens the spacing between those 4 lines */
+  margin-bottom: 0.8rem;
+}
 </style>

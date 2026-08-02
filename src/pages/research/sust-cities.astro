@@ -28,7 +28,7 @@ import sust from "../../assets/sust.png";
     <nav class="sub-nav-bar">
       <div class="sub-nav-links">
         <a href="#independent" class="sub-nav-item">
-          Independent Research <span class="count">2</span>
+          Independent Research <span class="count">3</span>
         </a>
         <a href="#collaborative" class="sub-nav-item">
           Collaborative Research <span class="count">3</span>
@@ -44,8 +44,22 @@ import sust from "../../assets/sust.png";
       </aside>
 
       <div class="project-list">
-        <!-- Project 1 -->
+        <!-- Project 1 Book Chapter -->
         <div class="project-card">
+        <span class="mono-date">2026</span> 
+          <h3>
+            <a href="https://www.routledge.com/Smart-and-Innovative-Solutions-for-a-Net-Zero-Built-Environment/Senaratne-Domingo-Perera/p/book/9781041256892" target="_blank" rel="noopener noreferrer">    
+           Smart and Innovative Solutions for a Net-Zero Built Environment</a>
+          </h3>
+          <p>
+          Overall, the book aims to bring together leading-edge smart solutions that consider both embodied and 
+          operational carbon reduction throughout the building lifecycle in its drive to achieve net-zero carbon.
+          </p>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+        <span class="mono-date">2025</span> 
           <h3>
             <a href="https://docs.lib.purdue.edu/cgi/viewcontent.cgi?article=1740&context=cib-conferences" target="_blank" rel="noopener noreferrer">    
            What is Stopping Building Information Modeling (BIM)-based Whole Life Carbon Assessment of Buildings in Hong Kong? </a>
@@ -56,9 +70,9 @@ import sust from "../../assets/sust.png";
           </p>
         </div>
 
-
         <!-- Project 2 -->
         <div class="project-card">
+        <span class="mono-date">2025</span>
           <h3>
             <a href="https://ascelibrary.org/doi/10.1061/9780784486436.083" target="_blank" rel="noopener noreferrer">    
             Digital Twins for Sustainable Hospitality Facilities Management: A Review and Empirical Investigation
@@ -82,6 +96,7 @@ import sust from "../../assets/sust.png";
     
 <!-- 1. XDT -->
     <div class="project-card">      
+    <span class="mono-date">2026</span>
     <h3>
     <a href="https://www.mdpi.com/2075-5309/16/10/1856" target="_blank" rel="noopener noreferrer">
     Explainable Digital Twins for Urban Drainage Resilience: A Multi-Source TCN-LSTM Framework for Real-Time Water Flow Prediction
@@ -95,7 +110,7 @@ import sust from "../../assets/sust.png";
   </p>
     
     <ul class="structured-bullets">
-    <li><strong>Role & Affiliation:</strong> Co-author, University of Cambridge and Zhejiang University (2026).</li>
+    <li><strong>Role & Affiliation:</strong> Co-author, University of Cambridge and Zhejiang University.</li>
     <li><strong>Project Scope:</strong> A hybrid TCN-LSTM model was developed to predict water level and surcharge risk probability at 15–60 min lead times. 
     A surrogate-based SHAP module was used to explain model predictions at the node and subcatchment scales.</li>
     <li><strong>Key Contributions:</strong> Assisted in designing Explainable Digital Twins.</li>
@@ -105,7 +120,8 @@ import sust from "../../assets/sust.png";
 
 <!-- 2.SunYi-Exergame -->
     <div class="project-card">
-    <h3>
+    <span class="mono-date">2023-2024</span>
+      <h3>
     <a href="https://www.ntu.edu.sg/arise/research-focus/health-coaching---lifestyleintervention/applying-immersive-projector-with-exergames-a-pilot-study-for-older-adults-in-singapore" target="_blank" rel="noopener noreferrer">
     Applying Immersive Projector with Exergames: A Pilot Study for Older Adults in Singapore
     </a>
@@ -119,7 +135,7 @@ import sust from "../../assets/sust.png";
     <li><strong>Role & Affiliation:</strong> Part-time Research Assistant, 
         Nanyang Technological University/Hong Kong Polytechnic University; 
         Co-Principal Investigator: <a href="https://www.polyu.edu.hk/cmi/people/academic-staff/dr-sun-yi/" target="_blank" 
-        rel="noopener noreferrer" class="external-link"> Dr SUN Yi </a>, the Hong Kong Polytechnic University (2023-2024).
+        rel="noopener noreferrer" class="external-link"> Dr SUN Yi </a>, the Hong Kong Polytechnic University.
     
     </li>
     
@@ -131,12 +147,13 @@ import sust from "../../assets/sust.png";
 
 <!-- 3.SunYi-PersonEnvtFit -->
 <div class="project-card">
-    <h3>
+<span class="mono-date">2020-2021</span>  
+  <h3>
     <a href="https://www.cepu.gov.hk/doc/en/research_report(PDF)/2019.A6.145.19D_Final%20Report_Dr%20Sun.pdf" target="_blank" rel="noopener noreferrer">
     Effects of Environment-related Experiences on Older Person’s Well-being in Hong Kong’s “Double Ageing” Context:
     A Person–environment Perspective
     </a>
-    </h3>
+  </h3>
     
     <p>
     A conceptual framework that articulates the co-constitution of socio-spatial
@@ -148,8 +165,7 @@ import sust from "../../assets/sust.png";
     <li><strong>Role & Affiliation:</strong> Part-time Research Assistant, 
         Hong Kong SAR Public Policy Research Funding Scheme; 
         Principal Investigator: <a href="https://www.polyu.edu.hk/cmi/people/academic-staff/dr-sun-yi/" target="_blank" 
-        rel="noopener noreferrer" class="external-link"> Dr SUN Yi </a>, the Hong Kong Polytechnic University 
-        (2020 – 2021).
+        rel="noopener noreferrer" class="external-link"> Dr SUN Yi </a>, the Hong Kong Polytechnic University.
     </li>
     
     <li><strong>Project Scope:</strong> Applying a mixed-method approach to
@@ -381,4 +397,19 @@ import sust from "../../assets/sust.png";
       margin-bottom: 1.5rem;
     }
   }
+  .mono-date {
+  font-family: monospace; /* Technical feel */
+  font-size: 0.85rem;
+  color: #888;            /* Subtle Grey */
+  font-weight: 500;
+  display: block;
+  margin-bottom: 0.5rem;  /* Space between date and title */
+  letter-spacing: 0.05em;
+}
+
+/* Ensure the title spacing is tight */
+.project-card h3 {
+  margin-top: 0;
+  line-height: 1.35;
+}
 </style>

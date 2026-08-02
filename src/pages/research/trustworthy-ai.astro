@@ -45,6 +45,7 @@ import trust from "../../assets/trust.png";
       <div class="project-list">
         <!-- Project 1 -->
         <div class="project-card">
+        <span class="mono-date">2026</span>
           <h3>
             <a href="/research/neurosym">    
               Deductive Reasoning in AI Agents: A Neuro-symbolic Planner for Green Retrofitting
@@ -57,6 +58,7 @@ import trust from "../../assets/trust.png";
 
         <!-- Project 2 -->
         <div class="project-card">
+        <span class="mono-date">2026</span>
           <h3>
             <a href="/research/great">
               GREAT (Green Retrofit Evidence-grounded Agent Team): Benchmarking Multi-agent RAG System
@@ -80,7 +82,8 @@ import trust from "../../assets/trust.png";
         
     <!-- ESGPass Card -->
     <div class="project-card">
-    <h3>
+    <span class="mono-date">2025-Now</span>
+      <h3>
     <a href="https://esgpass.com/#frameworks" target="_blank" rel="noopener noreferrer">
     ESGPass: AI for Corporate ESG Intelligence
     </a>
@@ -94,7 +97,7 @@ import trust from "../../assets/trust.png";
     <li>
       <strong>Role & Affiliation:</strong> Co-Founder, 
       <a href="https://llmplus.ai/" target="_blank" rel="noopener noreferrer" class="external-link"> LLM+</a>, 
-      University of Cambridge (Ongoing research).
+      University of Cambridge.
     </li>
     <li>
       <strong>Project Scope:</strong> Automated compliance frameworks for corporate CSRD, ISSB, GRI, and TCFD report generation.
@@ -108,7 +111,8 @@ import trust from "../../assets/trust.png";
 
     <!-- 2. OSDG -->
     <div class="project-card">
-    <h3>
+    <span class="mono-date">2020–2023</span>
+      <h3>
     <a href="https://osdg.ai/" target="_blank" rel="noopener noreferrer">
     United Nations OSDG: Global Sustainability Intelligence
     </a>
@@ -122,7 +126,7 @@ import trust from "../../assets/trust.png";
     <ul class="structured-bullets">
     <li><strong>Role & Affiliation:</strong> Volunteer Data Scientist,
     <a href="https://sdgailab.org/" target="_blank" rel="noopener noreferrer" class="external-link"> SDG AI Lab</a>, 
-    led by Dr Nuria Bautista Puig (2020 – 2023).</li>
+    led by Dr Nuria Bautista Puig.</li>
    
     <li><strong>Project Scope:</strong> Mapped public and academic research documents directly   to the UN 2030 SDGs.</li>
     <li><strong>Key Contributions:</strong> Co-developed OSDG with over 2,500 online volunteers for 17 SDG corpus in over 1,000+ international research papers.</li>
@@ -352,5 +356,21 @@ import trust from "../../assets/trust.png";
       margin-bottom: 1.5rem;
     }
   }
+
+  .mono-date {
+  font-family: monospace; /* Technical feel */
+  font-size: 0.85rem;
+  color: #888;            /* Subtle Grey */
+  font-weight: 500;
+  display: block;
+  margin-bottom: 0.5rem;  /* Space between date and title */
+  letter-spacing: 0.05em;
+}
+
+/* Ensure the title spacing is tight */
+.project-card h3 {
+  margin-top: 0;
+  line-height: 1.35;
+}
 </style>
 

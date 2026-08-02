@@ -45,6 +45,7 @@ import tech from "../../assets/tech.png";
       <div class="project-list">
         <!-- Project 1 -->
         <div class="project-card">
+        <span class="mono-date">2026</span> 
           <h3>
             <a href="/research/disruptive-innov">    
               Disrupting the Undisruptable: Agentic AI Innovations in Construction
@@ -57,6 +58,7 @@ import tech from "../../assets/tech.png";
 
         <!-- Project 2 -->
         <div class="project-card">
+          <span class="mono-date">2025</span>
           <h3>
             <a href="/research/dt-system">
               Convergence of Digital Twin and Human-Data Interaction: Advancing Customer Experience in the Built Environment
@@ -79,7 +81,8 @@ import tech from "../../assets/tech.png";
         
     <!-- outsider wages -->
     <div class="project-card">
-    <h3>
+    <span class="mono-date">2026</span> 
+      <h3>
     <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7140368" target="_blank" rel="noopener noreferrer">
     The Outsider’s Wager: Disciplinary Distance Buys Exceptional Science and Costs Scientific Careers
     </a>
@@ -93,7 +96,7 @@ import tech from "../../assets/tech.png";
     <li>
       <strong>Role & Affiliation:</strong> Research Fellow, 
       <a href="https://llmplus.ai/" target="_blank" rel="noopener noreferrer" class="external-link"> LLM+</a>, 
-      University of Cambridge (2026).
+      University of Cambridge.
     </li>
     <li>
       <strong>Project Scope:</strong> Modelling the relationships between outsiderness and scientific career.
@@ -107,7 +110,8 @@ import tech from "../../assets/tech.png";
 
     <!-- 3.HHWei-SmarCity -->
 <div class="project-card">
-    <h3>
+  <span class="mono-date">2021-2023</span>   
+  <h3>
     <a href="https://www.cepu.gov.hk/doc/en/research_report(PDF)/2021.A6.185.21D_Final%20Report_Dr%20Wei.pdf" target="_blank" rel="noopener noreferrer">
     Towards People-centric Smart City Development: Investigating the Citizens' Preferences and Expectations about
     Smart-city Services in Hong Kong
@@ -123,8 +127,7 @@ import tech from "../../assets/tech.png";
     <li><strong>Role & Affiliation:</strong> Part-time Research Assistant, 
         Hong Kong SAR Public Policy Research Funding Scheme; 
         Principal Investigator: <a href="https://www.polyu.edu.hk/cmi/people/academic-staff/dr-wei-hsi-hsien--johnny/" target="_blank" 
-        rel="noopener noreferrer" class="external-link"> Dr WEI Hsi Hsien </a>, the Hong Kong Polytechnic University 
-        (2021 – 2023).
+        rel="noopener noreferrer" class="external-link"> Dr WEI Hsi Hsien </a>, the Hong Kong Polytechnic University.
     </li>
     
     <li><strong>Project Scope:</strong> Examining the associations between citizens’ preferences for and
@@ -355,5 +358,20 @@ digital literacy, followed by their preferences and expectations for the 48 sele
       margin-bottom: 1.5rem;
     }
   }
+  .mono-date {
+  font-family: monospace; /* Technical feel */
+  font-size: 0.85rem;
+  color: #888;            /* Subtle Grey */
+  font-weight: 500;
+  display: block;
+  margin-bottom: 0.5rem;  /* Space between date and title */
+  letter-spacing: 0.05em;
+}
+
+/* Ensure the title spacing is tight */
+.project-card h3 {
+  margin-top: 0;
+  line-height: 1.35;
+}
 </style>
 

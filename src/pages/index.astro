@@ -22,16 +22,18 @@ import tech from "../assets/tech.png";
         </p>
 
         <p class="bio-text">
-          I study how humans and increasingly capable AI systems can make trustworthy decisions together.
-          My current research uses green retrofitting as the real-world laboratory for designing trustworthy human-AI decision systems
+          AI has transformed the digital world – the next frontier is the physical world.
+          In my PhD research, I use green retrofitting as my real-world laboratory for designing trustworthy human-AI decision systems
           in complex environments, extending my previous research on smart cities and sustainable buildings. 
-          
+        </p>
+        
+        <p class="bio-text">
           Ultimately, I am interested in how people should think, decide, and govern
           in an age of increasingly capable AI.
         </p>
         
         <a href="/research" class="hero-button">
-          Current Research →
+          PhD Research →
         </a>
       </div>
 
@@ -99,7 +101,7 @@ import tech from "../assets/tech.png";
       <div class="teaching-grid">
         
         <div class="teaching-row">
-          <div class="teach-date">Apr 2026 – Now</div>
+          <div class="teach-date">Apr 2026–Now</div>
           <div class="teach-content">
             <h3>Lead Tutor</h3>
             <p>
@@ -116,7 +118,7 @@ import tech from "../assets/tech.png";
           <div class="teach-content">
             <h3>Guest Lecturer</h3>
             <p>
-              Cambridge MBA/EMBA & Students from Renmin University of China/Beihang University
+              Cambridge MBA/EMBA, Renmin University of China and Beihang University students
             </p>
           </div>
         </div>
@@ -124,7 +126,55 @@ import tech from "../assets/tech.png";
       </div>
     </section>
 
-    <!-- 4. MUSINGS -->
+ <!-- 4. EDUCATION SECTION (Full Width Fix) -->
+    <section class="section-block">
+      <h2 class="section-title">Education</h2>
+
+      <div class="education-list">
+        
+        <!-- PhD Entry -->
+        <div class="education-item">
+          <h3>
+            PhD in Engineering, University of Cambridge 
+          </h3>
+          
+          <ul>
+            <li>Supervisor: <a href="https://physicalai.build/team/brian/" target="_blank" class="blue-link">
+                Professor Brian SHEIL</a>, Research Group: <a href="https://physicalai.build/" target="_blank" class="blue-link">
+                Physical AI for the Built World
+              </a>
+            </li>
+            <li>Scholarship Sponsor/Industry Partner: <a href="https://www.dorsetthospitality.com/" target="_blank" class="blue-link">
+                Dorsett Hospitality International Limited</a>
+            </li>
+            <li>
+              <a href="https://www-smartinfrastructure.eng.cam.ac.uk/" target="_blank" class="blue-link">
+                Cambridge Centre for Smart Infrastructure and Construction
+              </a>
+            </li>
+            <li>
+              <a href="https://www.eng.cam.ac.uk/" target="_blank" class="blue-link">
+                Department of Engineering</a>: Divisional Student Representative, Equality, Diversity and Inclusion (EDI) Committee
+              
+            </li>
+          </ul>
+        </div>
+
+        <div class="education-item">
+            <h3>
+            Bachelor of Science (Honours) in Surveying, The Hong Kong Polytechnic University</h3>
+          <ul>
+              <li>The Most Outstanding Student of the Year, Dean's Honours List, Presidential Student Leadership Award</li>
+              <li>Best Final Year Dissertation (Supervisor: <a href="https://cm.be.uw.edu/people/amos-darko/" target="_blank" class="blue-link">
+                Dr. Amos DARKO)</a></li>
+            </ul>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. MUSINGS -->
     <section class="section-block">
       <h2 class="section-title">Musings</h2>
       <p class="personal-text">
@@ -149,7 +199,7 @@ import tech from "../assets/tech.png";
   }
 
   .section-block {
-    padding: 4rem 0;
+    padding: 2.5rem 0;
     border-bottom: 1px solid #e5e5e5;
   }
   
@@ -223,7 +273,7 @@ import tech from "../assets/tech.png";
   .section-title {
     font-size: 2rem;
     font-weight: 700;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
     color: #111;
     letter-spacing: -0.02em;
   }
@@ -265,7 +315,7 @@ import tech from "../assets/tech.png";
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 1rem;
     margin-bottom: 1.5rem;
     transition: transform 0.2s;
   }
@@ -308,7 +358,7 @@ import tech from "../assets/tech.png";
     display: grid;
     grid-template-columns: 140px 1fr; /* Fixed date width */
     gap: 2rem;
-    padding: 1rem 0;
+    padding: 0.75rem 0;
     border-bottom: 1px solid #eee;
     align-items: baseline;
   }
@@ -330,15 +380,61 @@ import tech from "../assets/tech.png";
   .teach-content p {
     font-size: 1rem;
     color: #444;
-    line-height: 1.6;
+    line-height: 1.5;
     margin: 0;
   }
 
   .personal-text {
     font-size: 1.1rem;
     color: #444;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     max-width: 600px;
+  }
+
+/* =========================================
+     EDUCATION (Clean List Style)
+     ========================================= */
+  .education-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .education-item h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #111;
+    margin: 0 0 0.8rem 0;
+  }
+
+  /* The subtle date next to the title */
+  .edu-date {
+    font-family: monospace;
+    font-size: 0.9rem;
+    color: #777;
+    font-weight: 400;
+    margin-left: 0.8rem;
+  }
+
+  /* The bullet points */
+  .edu-details {
+    list-style-type: none; /* Clean look (no bullets, or use square if preferred) */
+    padding: 0;
+    margin: 0;
+    border-left: 2px solid #eee; /* Adds a nice academic line on the left */
+    padding-left: 1.2rem;
+  }
+
+  .edu-details li {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+  }
+
+  .edu-details strong {
+    color: #111;
+    font-weight: 600;
   }
 
   /* MOBILE */

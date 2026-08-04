@@ -1,433 +1,443 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
+import project from "../assets/project.jpg";
+
+import kp from "../assets/kp.png";
 ---
 
-<Layout title="Systems & Impact | Anson Chan">
-  <main class="homepage-container">
-    
-    <!-- PAGE HERO FRAME (REFRAMED FOR FELLOWSHIP STANDARDS) -->
-    <header class="section-block page-intro">
-      <h1 class="section-title">Systems, Deployment & Impact</h1>
-      <p class="subtitle-text">
-        Translating microeconomic primitives, socio-technical alignment protocols, and empirical policy frameworks into verifiable infrastructure.
+<Layout title="Projects">
+
+<main class="homepage-container">
+<section class="hero">
+<div class="hero-text">
+    <h1>From Research to Impacts</h1>
+    <p class="bio-text">
+      AI has transformed the digital world – the next frontier is the physical world.
+          In my PhD research, I use green retrofitting as my real-world laboratory for designing trustworthy human-AI decision systems
+          in complex environments, extending my previous research on smart cities and sustainable buildings. 
+        </p>
+        
+        <p class="bio-text">
+          Ultimately, I am interested in how people should think, decide, and govern
+          in an age of increasingly capable AI.
+        </p>
+
+      </div>
+
+      <div class="hero-photo">
+        <img src={project.src} alt="Project Image" class="profile-photo"/>
+      </div>
+    </section>
+
+    <!-- 2. RESEARCH INTERESTS -->
+    <section class="section-block">
+      <!-- 🛠️ UNIFIED HEADER CLASS -->
+      <h2 class="section-title">Research Interests</h2>
+
+      <div class="vision-grid">
+        
+        <!-- Card 1 -->
+        <article class="vision-item">
+          <div class="logo-box">
+            <img src={kp.src} alt="Trustworthy AI" class="theme-logo"/>
+          </div>
+          <h3>Trustworthy AI</h3>
+          <p>Designing advanced AI systems that are transparent and reliable.</p>
+          <!-- 🛠️ UNIFIED BLUE LINK -->
+          <a href="/research/trustworthy-ai" class="blue-link">Read more →</a>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="vision-item">
+          <div class="logo-box">
+            <img src={decision.src} alt="Decision Intelligence" class="theme-logo"/>
+          </div>
+          <h3>Decision Intelligence</h3>
+          <p>Developing data analysis tools to support decision-making.</p>
+          <a href="/research/decision-intelligence" class="blue-link">Read more →</a>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="vision-item">
+          <div class="logo-box">
+            <img src={sust.src} alt="Sustainable Cities" class="theme-logo"/>
+          </div>
+          <h3>Sustainable Cities</h3>
+          <p>Investigating sustainability principles in buildings and cities.</p>
+          <a href="/research/sust-cities" class="blue-link">Read more →</a>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="vision-item">
+          <div class="logo-box">
+            <img src={tech.src} alt="Technology & Society" class="theme-logo"/>
+          </div>
+          <h3>Technology & Society</h3>
+          <p>Understanding how technologies reshape societies.</p>
+          <a href="/research/tech-society" class="blue-link">Read more →</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 3. TEACHING SECTION -->
+    <section class="section-block">
+      <!-- 🛠️ SAME HEADER CLASS -->
+      <h2 class="section-title">Teaching</h2>
+
+      <div class="teaching-grid">
+        
+        <div class="teaching-row">
+          <div class="teach-date">Apr 2026–Now</div>
+          <div class="teach-content">
+            <h3>Lead Tutor</h3>
+            <ul>
+            <!-- 🛠️ SAME BLUE LINK CLASS -->
+              <a href="https://advanceonline.cam.ac.uk/courses/strategic-risk-management-in-the-age-of-ai" target="_blank" class="blue-link">  
+              <li>
+              Cambridge Advance Online: Strategic Risk Management in the Age of AI
+              </li>
+              </a>
+              <li>
+              Working professionals from the UK, US, Europe, and Asia.
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+
+        <div class="teaching-row">
+          <div class="teach-date">Mar 2026</div>
+          <div class="teach-content">
+            <h3>Guest Lecturer</h3>
+            <ul>
+              <li>AI in Business & LLM+ </li>
+              <li>Cambridge Judge Business School MBA/EMBA students; Renmin University of China and Beihang University students</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+ <!-- 4. EDUCATION SECTION (Full Width Fix) -->
+    <section class="section-block">
+      <h2 class="section-title">Education</h2>
+
+      <div class="education-list">
+        
+        <!-- PhD Entry -->
+        <div class="education-item">
+          <h3>
+            PhD in Engineering, University of Cambridge 
+          </h3>
+          
+          <ul>
+            <li>Supervisor: <a href="https://physicalai.build/team/brian/" target="_blank" class="blue-link">
+                Professor Brian SHEIL</a>, Research Group: <a href="https://physicalai.build/" target="_blank" class="blue-link">
+                Physical AI for the Built World
+              </a>
+            </li>
+            <li>Scholarship Sponsor/Industry Partner: <a href="https://www.dorsetthospitality.com/" target="_blank" class="blue-link">
+                Dorsett Hospitality International Limited</a>
+            </li>
+            <li>
+              <a href="https://www-smartinfrastructure.eng.cam.ac.uk/" target="_blank" class="blue-link">
+                Cambridge Centre for Smart Infrastructure and Construction
+              </a>
+            </li>
+            <li>
+              <a href="https://www.eng.cam.ac.uk/" target="_blank" class="blue-link">
+                Department of Engineering</a>: Divisional Student Representative, Equality, Diversity and Inclusion (EDI) Committee             
+            </li>
+          </ul>
+        </div>
+
+        <div class="education-item">
+            <h3>
+            Bachelor of Science (Honours) in Surveying, The Hong Kong Polytechnic University</h3>
+          <ul>
+              <li>The Most Outstanding Student of the Year, Dean's Honours List, Presidential Student Leadership Award</li>
+              <li>Best Final Year Dissertation (Supervisor: <a href="https://cm.be.uw.edu/people/amos-darko/" target="_blank" class="blue-link">
+                Dr. Amos DARKO)</a></li>
+            </ul>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. MUSINGS -->
+    <section class="section-block">
+      <h2 class="section-title">Musings</h2>
+      <p class="personal-text">
+        Beyond my research, I write about technologies, philosophy, cities, and ideas that shape humanities.
       </p>
-    </header>
-
-    <!-- SECTION 1: APPLIED SYSTEMIC VENTURES -->
-    <section class="section-block">
-      <h2 class="sub-section-title">Institutional Systems & Platforms</h2>
-      <div class="ventures-premium-grid">
-        
-        <!-- CARD 1: LLM+ -->
-        <article class="fellowship-card">
-          <div class="card-logo-header">
-            <!-- 🎯 RENDER IMAGE PATH: Adjust source string to match your assets folder -->
-            <img src="/images/llm-plus-logo.png" alt="LLM+ Research Hub Logo" class="brand-logo-img" />
-          </div>
-          <div class="card-body-content">
-            <div class="card-meta-row">
-              <span class="badge-tag tag-purple">Socio-Technical Node</span>
-              <span class="chrono-stamp">2025 - Present</span>
-            </div>
-            <h3 class="card-title-heading">LLM+ Research Hub</h3>
-            <p class="card-brief">
-              Co-founded an international AI-for-Science research collective spanning 120+ researchers across 30 world-leading institutions. Architected <strong>LLMVenture</strong>, a socio-economic analytics engine that audited 4,500+ generative AI ventures to map technological diffusion and systemic labor transformations.
-            </p>
-            <div class="card-action-footer">
-              <a href="https://llmplus.ai" target="_blank" rel="noopener noreferrer" class="blue-link">Explore llmplus.ai &rarr;</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- CARD 2: BACBUDY -->
-        <article class="fellowship-card">
-          <div class="card-logo-header">
-            <!-- 🎯 RENDER IMAGE PATH: Adjust source string to match your assets folder -->
-            <img src="/images/bacbudy-logo.png" alt="BacBudy Embodied AI Logo" class="brand-logo-img" />
-          </div>
-          <div class="card-body-content">
-            <div class="card-meta-row">
-              <span class="badge-tag tag-blue">Embodied Economics</span>
-              <span class="chrono-stamp">2025 - Present</span>
-            </div>
-            <h3 class="card-title-heading">BacBudy</h3>
-            <p class="card-brief">
-              Co-founded as AI Scientist, developing an embodied intelligence apparel matrix to safeguard industrial labor demographics against physical strain. Integrated deep learning feedback structures with workplace economics to construct scalable safety-critical workflows.
-            </p>
-            <div class="card-action-footer">
-              <span class="award-callout">🏆 Champion — Cambridge Buildhouse x NVIDIA Startup Pitch</span>
-            </div>
-          </div>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- SECTION 2: FRONTIER ALIGNMENT FELLOWSHIPS -->
-    <section class="section-block">
-      <h2 class="sub-section-title">Frontier Safety & Governance</h2>
-      <div class="ventures-premium-grid">
-        
-        <!-- CARD 3: CAISH -->
-        <article class="fellowship-card">
-          <div class="card-logo-header">
-            <img src="/images/caish-logo.png" alt="Cambridge AI Safety Hub Logo" class="brand-logo-img" />
-          </div>
-          <div class="card-body-content">
-            <div class="card-meta-row">
-              <span class="badge-tag tag-red">AI Alignment</span>
-              <span class="chrono-stamp">2024 - Present</span>
-            </div>
-            <h3 class="card-title-heading">Cambridge AI Safety Hub (CAISH)</h3>
-            <p class="card-brief">
-              Active Fellow contributing to the technical and institutional alignment ecosystem. Developing empirical frameworks to assess risks associated with high-stakes autonomous decision-making and exploring mechanism design to optimize multi-agent systemic stability.
-            </p>
-            <div class="card-action-footer">
-              <a href="https://caish.org" target="_blank" rel="noopener noreferrer" class="blue-link">Explore caish.org &rarr;</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- CARD 4: KING'S POLITICS ORG LOGIC -->
-        <article class="fellowship-card">
-          <div class="card-logo-header">
-            <img src="/images/kings-politics-logo.png" alt="King's College Politics Society Logo" class="brand-logo-img" />
-          </div>
-          <div class="card-body-content">
-            <div class="card-meta-row">
-              <span class="badge-tag tag-green">Policy Architecture</span>
-              <span class="chrono-stamp">2024 - Present</span>
-            </div>
-            <h3 class="card-title-heading">King's College Politics Society</h3>
-            <p class="card-brief">
-              Serving as Events Officer for Greater China and Hong Kong. Convened multi-disciplinary tracking nodes to connect frontier technical breakthroughs with macro-economic metrics, global environmental governance models, and sovereign policy.
-            </p>
-            <div class="card-action-footer">
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="blue-link">Official Network Profile &rarr;</a>
-            </div>
-          </div>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- SECTION 3: THE ANTHROPIC-STYLE VERTICAL FEED -->
-    <section class="section-block">
-      <h2 class="sub-section-title">Socio-Technical Dialogues & Research Briefs</h2>
-      <p class="feed-intro-text">A chronological index of convened forums addressing macro-level risk mitigation, structural economic realignment, and international governance systems.</p>
-      
-      <div class="impact-chronology-feed">
-        
-        <!-- LOG ITEM 1 -->
-        <div class="feed-impact-row">
-          <div class="feed-poster-column">
-            <!-- 🎯 DROP POSTER: Replace path with your official event image asset -->
-            <img src="/images/posters/earthquake-management.jpg" alt="AI for Post-Earthquake Management Poster" class="poster-asset-img" />
-            <div class="poster-backup-fallback">Poster Asset Node</div>
-          </div>
-          <div class="feed-description-column">
-            <div class="feed-meta-strip">
-              <span class="badge-mini type-keynote">Keynote Address</span>
-              <span class="date-mono">19 May 2026</span>
-            </div>
-            <h4>AI for Post-Earthquake Management</h4>
-            <p class="feed-institution">University of Cambridge & Pontificia Universidad Cat&oacute;lica del Peru</p>
-            <p class="feed-abstract">Presented optimization algorithms for critical emergency response infrastructures. Addressed the challenge of routing computational agents through dynamic, resource-constrained environments during systemic crisises.</p>
-          </div>
-        </div>
-
-        <!-- LOG ITEM 2 -->
-        <div class="feed-impact-row">
-          <div class="feed-poster-column">
-            <img src="/images/posters/climate-decision.jpg" alt="Climate Decision Making Poster" class="poster-asset-img" />
-            <div class="poster-backup-fallback">Poster Asset Node</div>
-          </div>
-          <div class="feed-description-column">
-            <div class="feed-meta-strip">
-              <span class="badge-mini type-chat">LLM+ Fireside</span>
-              <span class="date-mono">29 Jan 2026</span>
-            </div>
-            <h4>Climate Decision-making and Governance in the Age of GenAI</h4>
-            <p class="feed-institution">In conversation with Dr. Angel Hsu (University of North Carolina at Chapel Hill)</p>
-            <p class="feed-abstract">Analyzed the intersection of algorithmic transparency and international environmental policy. Evaluated how data asymmetries in frontier models complicate cross-border carbon accounting systems and carbon credit governance.</p>
-          </div>
-        </div>
-
-        <!-- LOG ITEM 3 -->
-        <div class="feed-impact-row">
-          <div class="feed-poster-column">
-            <img src="/images/posters/green-retrofitting.jpg" alt="Agentic AI and Green Retrofitting Poster" class="poster-asset-img" />
-            <div class="poster-backup-fallback">Poster Asset Node</div>
-          </div>
-          <div class="feed-description-column">
-            <div class="feed-meta-strip">
-              <span class="badge-mini type-keynote">Invited Keynote</span>
-              <span class="date-mono">19 Dec 2025</span>
-            </div>
-            <h4>Agentic AI and Green Retrofitting</h4>
-            <p class="feed-institution">Hong Kong Polytechnic University: Department of Building and Real Estate</p>
-            <p class="feed-abstract">Outlined algorithmic structures that simulate long-range resource consumption in urban areas. Suggested data-driven frameworks for managing systemic risk in sustainable real estate investments.</p>
-          </div>
-        </div>
-
-      </div>
+      <a href="/writing" class="hero-button">
+        Writing →
+      </a>
     </section>
 
   </main>
 </Layout>
 
-<!-- STYLESHEET EXCLUSIVELY REMODALED TO MATCH ANTHROPIC/CAISH PLATFORMS -->
 <style>
   /* =========================================
-     1. CARD STRUCTURE & HOVER EFFECTS
+     1. PAGE LAYOUT (Standardized 1100px)
      ========================================= */
-  .fellowship-card { 
-    background: #ffffff; 
-    border: 1px solid #e2e8f0; 
-    border-radius: 14px; 
-    overflow: hidden; 
-    display: flex; 
-    flex-direction: column; 
-    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1); 
-    box-shadow: 0 4px 20px rgba(0,0,0,0.01); 
+  .homepage-container {
+    max-width: 1100px; /* 🎯 MATCHES YOUR RESEARCH PAGES */
+    margin: 0 auto;
+    padding: 0 2rem 6rem;
+  }
+
+  .section-block {
+    padding: 2.5rem 0;
+    border-bottom: 1px solid #e5e5e5;
   }
   
-  .fellowship-card:hover { 
-    transform: translateY(-4px); 
-    box-shadow: 0 16px 36px rgba(0,0,0,0.06); 
-    border-color: #cbd5e1; 
+  .section-block:last-child {
+    border-bottom: none;
   }
 
   /* =========================================
-     2. STANDARDIZED BRAND LOGO FRAMES
+     2. HERO SECTION
      ========================================= */
-  .card-logo-header { 
-    width: 100%; 
-    height: 140px; 
-    background: #ffffff; 
-    border-bottom: 1px solid #f1f5f9; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    padding: 1.5rem; 
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Stops "floating apart" */
+    gap: 5rem;
+    padding: 5rem 0 5rem;
+    border-bottom: 1px solid #e5e5e5;
   }
-  
-  .brand-logo-img { 
-    max-width: 70%; 
-    max-height: 75%; 
-    object-fit: contain; 
-    filter: grayscale(10%) contrast(95%); 
-    transition: filter 0.2s ease; 
+
+  .hero-text {
+    flex: 1;
+    max-width: 680px;
   }
-  
-  .fellowship-card:hover .brand-logo-img { 
-    filter: grayscale(0%) contrast(100%); 
+
+  .hero-text h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin-bottom: 1.5rem;
+    color: #111;
+  }
+
+  .affiliation {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+
+  .bio-text {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 2rem;
+  }
+
+  .hero-button {
+    display: inline-block;
+    padding: 0.8rem 1.6rem;
+    font-weight: 600;
+    background: #111;
+    color: white;
+    border-radius: 6px;
+    transition: background 0.2s;
+  }
+  .hero-button:hover { background: #333; }
+
+  .hero-photo { flex-shrink: 0; }
+  .profile-photo {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.05);
   }
 
   /* =========================================
-     3. CARD INTERIORS & METRICS
+     3. UNIFIED HEADERS & LINKS (THE FIX)
      ========================================= */
-  .card-body-content { 
-    padding: 2rem; 
-    display: flex; 
-    flex-direction: column; 
-    flex-grow: 1; 
+  .section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #111;
+    letter-spacing: -0.02em;
   }
-  
-  .card-meta-row { 
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    margin-bottom: 1rem; 
+
+  .blue-link {
+    color: #0067c0;            /* 🎯 ACADEMIC BLUE */
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 1px solid transparent;
+    transition: all 0.2s ease;
   }
-  
-  .badge-tag { 
-    font-size: 0.72rem; 
-    font-weight: 700; 
-    text-transform: uppercase; 
-    letter-spacing: 0.04em; 
-    padding: 0.25rem 0.6rem; 
-    border-radius: 6px; 
-  }
-  
-  .tag-purple { background: #f3e8ff; color: #6b21a8; }
-  .tag-blue { background: #e0f2fe; color: #0369a1; }
-  .tag-red { background: #fee2e2; color: #991b1b; }
-  .tag-green { background: #dcfce7; color: #166534; }
-  
-  .chrono-stamp { 
-    font-family: monospace; 
-    font-size: 0.85rem; 
-    color: #64748b; 
-  }
-  
-  .card-title-heading { 
-    font-size: 1.35rem; 
-    font-weight: 700; 
-    margin-bottom: 0.75rem; 
-    color: #111; 
-    letter-spacing: -0.01em; 
-  }
-  
-  .card-brief { 
-    font-size: 0.95rem; 
-    color: #334155; 
-    line-height: 1.6; 
-    margin-bottom: 1.8rem; 
-    flex-grow: 1; 
-  }
-  
-  .card-action-footer { 
-    border-top: 1px solid #f1f5f9; 
-    padding-top: 1.2rem; 
-  }
-  
-  .award-callout { 
-    font-size: 0.85rem; 
-    font-weight: 600; 
-    color: #b45309; 
+
+  .blue-link:hover {
+    color: #004b99;
+    text-decoration: underline;
   }
 
   /* =========================================
-     4. ANTHROPIC/MCKINSEY-STYLE IMPACT FEED
+     4. RESEARCH GRID
      ========================================= */
-  .feed-intro-text { 
-    font-size: 1.05rem; 
-    color: #64748b; 
-    margin-top: -1.5rem; 
-    margin-bottom: 3rem; 
-    max-width: 700px; 
+   .vision-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem; 
+  }
+
+  .vision-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo-box {
+    width: 100%;
+    aspect-ratio: 1/1; 
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    transition: transform 0.2s;
   }
   
-  .impact-chronology-feed { 
-    display: flex; 
-    flex-direction: column; 
-    gap: 3.5rem; 
+  .vision-item:hover .logo-box { transform: translateY(-4px); }
+
+  .theme-logo {
+    max-width: 160%;
+    max-height: 160%;
+    object-fit: contain;
   }
-  
-  .feed-impact-row { 
-    display: grid; 
-    grid-template-columns: 200px 1fr; 
-    gap: 3rem; 
-    border-bottom: 1px solid #f1f5f9; 
-    padding-bottom: 3.5rem; 
-    position: relative; 
+
+  .vision-item h3 {
+    font-size: 1.05rem;        /* 🎯 REWORKED: Brought down slightly to physically fit the containers */
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #111;
+    white-space: nowrap;       /* 🛑 BLOCKER: Explicitly tells the browser it is illegal to break to line 2 */
+    width: 100%;               /* Ensures text metrics anchor correctly */
+    overflow: visible;         /* Allows characters to sit cleanly if they touch the boundary edge */
   }
-  
-  .feed-impact-row:last-child { 
-    border-bottom: none; 
+
+  .vision-item p {
+    font-size: 0.92rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    flex-grow: 1;
   }
 
   /* =========================================
-     5. AUTOMATED POSTER GRAPHICS CONTROLLERS
+     5. TEACHING TIMELINE
      ========================================= */
-  .feed-poster-column { 
-    width: 100%; 
-    aspect-ratio: 3/4; 
-    background: #f8fafc; 
-    border: 1px solid #e2e8f0; 
-    border-radius: 8px; 
-    overflow: hidden; 
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    position: relative; 
-  }
-  
-  .poster-asset-img { 
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    z-index: 2; 
-  }
-  
-  .poster-backup-fallback { 
-    font-size: 0.72rem; 
-    color: #94a3b8; 
-    font-family: monospace; 
-    text-align: center; 
-    padding: 1rem; 
-    z-index: 1; 
+  .teaching-grid {
+    display: flex;
+    flex-direction: column;
   }
 
-  /* =========================================
-     6. FEED TYPOGRAPHY & CHRONOLOGY METRICS
-     ========================================= */
-  .feed-description-column h4 { 
-    font-size: 1.2rem; 
-    font-weight: 700; 
-    margin: 0.6rem 0 0.3rem 0; 
-    color: #111; 
-    letter-spacing: -0.01em; 
-  }
-  
-  .feed-institution { 
-    font-size: 0.92rem; 
-    font-weight: 600; 
-    color: #475569; 
-    margin: 0 0 1rem 0; 
-  }
-  
-  .feed-abstract { 
-    font-size: 0.95rem; 
-    color: #334155; 
-    line-height: 1.6; 
-    margin: 0; 
-  }
-  
-  .feed-meta-strip { 
-    display: flex; 
-    gap: 1rem; 
-    align-items: center; 
-  }
-  
-  .badge-mini { 
-    font-size: 0.65rem; 
-    font-weight: 700; 
-    padding: 0.2rem 0.5rem; 
-    border-radius: 4px; 
-    text-transform: uppercase; 
-    letter-spacing: 0.02em; 
-  }
-  
-  .type-keynote { 
-    background: #fef3c7; 
-    color: #d97706; 
-    border: 1px solid #fde68a; 
-  }
-  
-  .type-chat { 
-    background: #f0fdf4; 
-    color: #166534; 
-    border: 1px solid #bbf7d0; 
-  }
-  
-  .date-mono { 
-    font-family: monospace; 
-    font-size: 0.85rem; 
-    color: #64748b; 
+  .teaching-row {
+    display: grid;
+    grid-template-columns: 140px 1fr; /* Fixed date width */
+    gap: 2rem;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #eee;
+    align-items: baseline;
   }
 
-  /* =========================================
-     7. MULTI-DEVICE RESPONSIVE BREAKPOINTS
+  .teaching-row:last-child { border-bottom: none; }
+
+  .teach-date {
+    font-family: monospace;
+    font-size: 0.9rem;
+    color: #888;
+  }
+
+  .teach-content h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0 0 0.3rem 0;
+  }
+
+  .teach-content p {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .personal-text {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 1rem;
+    max-width: 600px;
+  }
+
+/* =========================================
+     EDUCATION (Clean List Style)
      ========================================= */
+  .education-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .education-item h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #111;
+    margin: 0 0 0.8rem 0;
+  }
+
+  /* The subtle date next to the title */
+  .edu-date {
+    font-family: monospace;
+    font-size: 0.9rem;
+    color: #777;
+    font-weight: 400;
+    margin-left: 0.8rem;
+  }
+
+  /* The bullet points */
+  .edu-details {
+    list-style-type: none; /* Clean look (no bullets, or use square if preferred) */
+    padding: 0;
+    margin: 0;
+    border-left: 2px solid #eee; /* Adds a nice academic line on the left */
+    padding-left: 1.2rem;
+  }
+
+  .edu-details li {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+  }
+
+  .edu-details strong {
+    color: #111;
+    font-weight: 600;
+  }
+
+  /* MOBILE */
   @media (max-width: 900px) {
-    .ventures-premium-grid { 
-      grid-template-columns: 1fr; 
-      gap: 2rem; 
-    }
-    .feed-impact-row { 
-      grid-template-columns: 1fr; 
-      gap: 1.5rem; 
-      padding-bottom: 2.5rem; 
-    }
-    .feed-poster-column { 
-      max-width: 180px; 
-    }
+    .hero { flex-direction: column-reverse; align-items: flex-start; gap: 2rem; }
+    .vision-grid { grid-template-columns: repeat(2, 1fr); }
+    .teaching-row { grid-template-columns: 1fr; gap: 0.5rem; }
+  }
+
+  .no-break {
+    white-space: nowrap;
   }
 </style>
-
-

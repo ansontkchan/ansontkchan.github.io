@@ -1,141 +1,173 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import research from "../assets/research.png";
 ---
 
 <Layout title="Research">
+<main class="page-container">
 
-  <main class="page-container">
+<!-- 1. HERO SECTION -->
+<section class="hero">
+<div class="hero-text">
+<h1>Research</h1>
 
-    <!-- 1. INTRO HERO -->
-    <section class="intro-block">
-      <h1>Research</h1>
-      <p class="intro-text">
-        Buildings remain accountable for 37% of the global carbon emissions, reducing their carbon footprints is essential for the 2050 net zero target.
-        How can trustworthy human-AI decision systems accelerate decarbonisation in the built environment?
-        I combine advanced AI (agentic AI and RAG), decision science, and management theories to support decision-making towards sustainable construction.
-      </p>
-    </section>
+<p class="bio-text">
+Buildings remain accountable for 37% of the global carbon emissions, reducing their carbon footprints is essential for the 2050 net zero target. 
+How can trustworthy human-AI decision systems accelerate decarbonisation in the built environment?
+I combine advanced AI (agentic AI and RAG), decision science, and management theories to support decision-making towards sustainable construction.
+</p>
 
-    <!-- 2. RESEARCH HIGHLIGHTS GRID -->
-    <section class="highlights-section">
-      <h2 class="section-title">Research Highlights</h2>
+</div>
 
-      <div class="research-grid">
+<div class="hero-photo">
+<img src={research.src} alt="Portrait of Anson Chan" class="profile-photo"/>
 
-        <!-- Card 1: GREAT -->
-        <article class="paper-card">
-          <div class="image-box">
-            <img src="/research/great/0.1-great-banner.png" alt="GREAT Framework" />
-          </div>
-          <div class="paper-content">
-            <span class="status-pill status-yellow">User Evaluation</span>
-            <h3>
-              <!-- 🛠️ BLUE CLICKABLE TITLE -->
-              <a href="/research/great" class="paper-link">
-                GREAT (Green Retrofit Evidence-grounded Agent Team): Benchmarking Multi-agent RAG System
-              </a>
-            </h3>
-            <p>
-              This study develops a multi-agent RAG system, GREAT, to support green retrofitting planning. 
-              We test how multi-agent RAG can improve answer accuracy by leveraging construction domain knowledge.
-            </p>
-            <!-- Tags -->
-            <div class="tags-row">
-              <span class="tech-tag">Multi-agent RAG</span>
-              <span class="tech-tag">Reasoning</span>
-              <span class="tech-tag">Expert Knowledge</span>
-            </div>
-          </div>
-        </article>
+</div>    
+</section>
 
-        <!-- Card 2: Global Pathway -->
-        <article class="paper-card">
-          <div class="image-box">
-            <img src="/research/global-pathway/0-cor-network.png" alt="Correlation Network" />
-          </div>
-          <div class="paper-content">
-            <span class="status-pill status-green">Accepted · American Society of Civil Engineers (ASCE) Journal </span>
-            <h3>
-              <a href="/research/global-pathway" class="paper-link">
-                A Global Pathway to Net Zero Buildings: A Correlation Network Analysis
-              </a>
-            </h3>
-            <p>
-              Achieving net zero requires better decisions. This project introduces "builtenv-cna", 
-              an open-source analytical framework transforming 145 empirical surveys into correlation networks.
-            </p>
-            <div class="tags-row">
-              <span class="tech-tag">Net-zero Decision Support</span>
-              <span class="tech-tag">System Thinking</span>
-              <span class="tech-tag">Open-source Python Analytical Tool</span>
-              <span class="tech-tag">Graph-based networks</span>
-            </div>
-          </div>
-        </article>
+<!-- 2. RESEARCH HIGHLIGHTS GRID -->
+<section class="highlights-section">
 
-        <!-- Card 3: Disruptive Innovation -->
-        <article class="paper-card">
-          <div class="image-box">
-            <img src="/research/disruptive-innov/0.3-DIT-banner.png" alt="Disruptive Innovation" />
-          </div>
-          <div class="paper-content">
-            <span class="status-pill status-blue">Under Review</span>
-            <h3>
-              <a href="/research/disruptive-innov" class="paper-link">
-                Disrupting the Undisruptable: Agentic AI Innovations in Construction
-              </a>
-            </h3>
-            <p>
-              Grounded in Disruptive Innovation Theory, this study explores how agentic AI challenges 
-              innovation dynamics in the construction industry: a sector characterised by slow adoption and complex constraints.
-            </p>
-            <div class="tags-row">
-              <span class="tech-tag">Technology Strategy</span>
-              <span class="tech-tag">34 Interviews</span>
-              <span class="tech-tag">Institution Innovation</span>
-            </div>
-          </div>
-        </article>
+<h2 class="section-title">Research Highlights</h2>
 
-        <!-- Card 4: Digital Twin -->
-        <article class="paper-card">
-          <div class="image-box">
-            <img src="/research/DT-system/0-DTsystem-banner.png" alt="Digital Twin System" />
-          </div>
-          <div class="paper-content">
-            <span class="status-pill status-green">Published · 2025 European Conference on Computing in Construction</span>
-            <h3>
-              <a href="/research/dt-system" class="paper-link">
-                Convergence of Digital Twin and Human-Data Interaction: Advancing Customer Experience in the Built Environment
-              </a>
-            </h3>
-            <p>
-              Our 3-tiered framework with 26 user cases demonstrates how Digital Twin Systems 
-              can be designed to enhance human-data interaction in the built environment.
-            </p>
-            <div class="tags-row">
-              <span class="tech-tag">Industry 5.0</span>
-              <span class="tech-tag">Digital Twin System</span>
-              <span class="tech-tag">Human-Data Interaction</span>
-            </div>
-          </div>
-        </article>
+<div class="research-grid">
 
-      </div>
-    </section>
+<!-- Card 1: GREAT -->
+<article class="paper-card">
+<div class="image-box">
+<img src="/research/great/0.1-great-banner.png" alt="GREAT Framework" />
+</div>
 
-    <!-- 3. ACADEMIC PROFILES -->
-    <section class="profiles-section">
-      <h2 class="section-title">Academic Profiles</h2>
-      <div class="button-group">
-        <a class="profile-btn" href="https://scholar.google.com/citations?user=hG0RMxAAAAAJ&hl=en" target="_blank">Google Scholar</a>
-        <a class="profile-btn" href="https://github.com/ansontkchan" target="_blank">GitHub</a>
-        <a class="profile-btn" href="https://www.linkedin.com/in/anson-chan-b836331b9/" target="_blank">LinkedIn</a>
-        <a class="profile-btn" href="https://www.researchgate.net/profile/Anson-Chan-30" target="_blank">ResearchGate</a>
-      </div>
-    </section>
+<div class="paper-content">
+<span class="status-pill status-yellow">User Evaluation</span>
 
-  </main>
+<h3>
+<a href="/research/great" class="paper-link">
+GREAT (Green Retrofit Evidence-grounded Agent Team): Benchmarking Multi-agent RAG System
+</a>
+</h3>
+
+<p>
+This study develops a multi-agent RAG system, GREAT, to support green retrofitting planning.    
+We test how multi-agent RAG can improve answer accuracy by leveraging construction domain knowledge.
+</p>
+
+<!-- Tags -->
+
+<div class="tags-row">
+  <span class="tech-tag">Multi-agent RAG</span>
+  <span class="tech-tag">Reasoning</span>
+  <span class="tech-tag">Expert Knowledge</span>  
+</div>          
+</div>      
+</article>
+
+<!-- Card 2: Global Pathway -->
+
+<article class="paper-card">
+<div class="image-box">
+<img src="/research/global-pathway/0-cor-network.png" alt="Correlation Network" />
+</div>
+
+<div class="paper-content">
+<span class="status-pill status-green">Accepted · American Society of Civil Engineers (ASCE) Journal </span>
+
+<h3>
+<a href="/research/global-pathway" class="paper-link">
+A Global Pathway to Net Zero Buildings: A Correlation Network Analysis
+</a>
+</h3>
+    
+<p>
+Achieving net zero requires better decisions. This project introduces "builtenv-cna", 
+an open-source analytical framework transforming 145 empirical surveys into correlation networks.            
+</p>
+
+<div class="tags-row">
+  <span class="tech-tag">Net-zero Decision Support</span>
+  <span class="tech-tag">System Thinking</span>
+  <span class="tech-tag">Open-source Python Analytical Tool</span>
+  <span class="tech-tag">Graph-based networks</span>
+</div>
+          
+</div>  
+</article>
+
+<!-- Card 3: Disruptive Innovation -->
+       
+<article class="paper-card">
+<div class="image-box">
+<img src="/research/disruptive-innov/0.3-DIT-banner.png" alt="Disruptive Innovation" />
+</div>
+          
+<div class="paper-content">
+<span class="status-pill status-blue">Under Review</span>
+
+<h3>
+<a href="/research/disruptive-innov" class="paper-link">
+Disrupting the Undisruptable: Agentic AI Innovations in Construction
+</a>            
+</h3>
+    
+<p>
+Grounded in Disruptive Innovation Theory, this study explores how agentic AI challenges 
+innovation dynamics in the construction industry: a sector characterised by slow adoption and complex constraints.
+</p>
+
+<div class="tags-row">
+  <span class="tech-tag">Technology Strategy</span>
+  <span class="tech-tag">34 Interviews</span>
+  <span class="tech-tag">Institution Innovation</span>
+</div>
+</div>      
+</article>
+
+<!-- Card 4: Digital Twin -->
+
+<article class="paper-card">
+<div class="image-box">
+<img src="/research/DT-system/0-DTsystem-banner.png" alt="Digital Twin System" />
+</div>
+
+<div class="paper-content">
+<span class="status-pill status-green">Published · 2025 European Conference on Computing in Construction</span>
+
+<h3>
+<a href="/research/dt-system" class="paper-link">
+Convergence of Digital Twin and Human-Data Interaction: Advancing Customer Experience in the Built Environment
+</a>
+</h3>
+
+<p>
+Our 3-tiered framework with 26 user cases demonstrates how Digital Twin Systems    
+can be designed to enhance human-data interaction in the built environment.            
+</p>
+
+<div class="tags-row">
+  <span class="tech-tag">Industry 5.0</span>
+  <span class="tech-tag">Digital Twin System</span>
+  <span class="tech-tag">Human-Data Interaction</span>
+</div>
+
+</div>
+</article>
+</div>
+</section>
+
+<!-- 3. ACADEMIC PROFILES -->
+<section class="profiles-section">
+<h2 class="section-title">Academic Profiles</h2>
+
+<div class="button-group">
+  <a class="profile-btn" href="https://scholar.google.com/citations?user=hG0RMxAAAAAJ&hl=en" target="_blank">Google Scholar</a>
+  <a class="profile-btn" href="https://github.com/ansontkchan" target="_blank">GitHub</a>
+  <a class="profile-btn" href="https://www.linkedin.com/in/anson-chan-b836331b9/" target="_blank">LinkedIn</a>
+  <a class="profile-btn" href="https://www.researchgate.net/profile/Anson-Chan-30" target="_blank">ResearchGate</a>
+
+</div>
+</section>
+
+</main>
 </Layout>
 
 <style>
@@ -287,8 +319,8 @@ import Layout from "../layouts/Layout.astro";
 
   .tech-tag {
     font-size: 0.85rem;
-    color: #666;
-    background: #f3f4f6;
+    color: #111111b9;
+    background: #e5e5e5;
     padding: 0.2rem 0.6rem;
     border-radius: 4px;
     font-weight: 500;
@@ -326,5 +358,47 @@ import Layout from "../layouts/Layout.astro";
 
   @media (max-width: 900px) {
     .research-grid { grid-template-columns: 1fr; }
+  }
+
+  /* =========================================
+     2. HERO SECTION
+     ========================================= */
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Stops "floating apart" */
+    gap: 5rem;
+    padding: 5rem 0 5rem;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  .hero-text {
+    flex: 1;
+    max-width: 680px;
+  }
+
+  .hero-text h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin-bottom: 1.5rem;
+    color: #111;
+  }
+
+  .bio-text {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 2rem;
+  }
+  
+  hero-photo { flex-shrink: 0; }
+  .profile-photo {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.05);
   }
 </style>

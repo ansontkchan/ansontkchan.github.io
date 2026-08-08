@@ -1,130 +1,141 @@
 ---
 import Layout from "../layouts/Layout.astro";
-// 📸 Ensure this image exists in src/assets/
 import essays from "../assets/essays.png";
 ---
 
 <Layout title="Essays | Anson Chan">
-  <main class="page-container">
-    
-    <!-- 1. HERO SECTION (Identical to Homepage) -->
-    <section class="hero">
-      <div class="hero-text">
-        <h1>Essays</h1>
-        <p class="bio-text">
-          Beyond technical research, I write about the <strong>governance of complex systems</strong>. 
-          Reflections on decision intelligence, safety engineering, and the human side of AI policy.
-        </p>      
-      </div>
+<main class="page-container">
 
-      <div class="hero-photo">
-        <img src={essays.src} alt="Essays" class="hero-icon" />
-      </div>
-    </section>
+<!-- 1. HERO SECTION (Identical to Homepage) -->
+<section class="hero">
+<div class="hero-text">
 
-    <!-- 2. ESSAYS LIST -->
-    <section class="essay-list">
+<h1>Essays</h1>
+<p class="bio-text">
+Beyond my research, I write about technologies, philosophy, cities, and ideas that shape humanities.
+</p>      
+</div>
+
+<div class="hero-photo">
+<img src={essays.src} alt="Essays" class="hero-icon" />
+</div>
+</section>
+
+<!-- 2. ESSAYS LIST -->
+<section class="essay-list">
       
-      <!-- Topic 1 -->
-      <article class="essay-item">
-        <div class="essay-meta">
-          <span class="mono-date">Upcoming</span>
-        </div>
-        <div class="essay-content">
-          <h3>
-            <!-- href="#" keeps it clickable/blue but goes nowhere -->
-            <a href="#" class="essay-link">What Construction Can Teach AI Safety</a>
-          </h3>
-          <p class="essay-desc">
-            Civil engineering has spent a century mastering safety in high-stakes physical environments. Applying these "Safety Case" frameworks to AI governance.
-          </p>
-          <span class="coming-soon">Coming soon</span>
-        </div>
-      </article>
+<!-- Topic 1 -->
+<article class="essay-item">
+<div class="essay-meta">
+<span class="mono-date">Upcoming</span>
+</div>
 
-      <!-- Topic 2 -->
-      <article class="essay-item">
-        <div class="essay-meta">
-          <span class="mono-date">Upcoming</span>
-        </div>
-        <div class="essay-content">
-          <h3>
-            <a href="#" class="essay-link">Green Retrofit Is Not an Optimisation Problem</a>
-          </h3>
-          <p class="essay-desc">
-            Why treating policy challenges as math problems fails. Understanding the messiness of human incentives in net-zero transitions.
-          </p>
-          <span class="coming-soon">Coming soon</span>
-        </div>
-      </article>
+<div class="essay-content">
+<h3>
+<a href="#" class="essay-link">What construction safety can teach AI safety</a>
+</h3>
 
-      <!-- Topic 3 -->
-      <article class="essay-item">
-        <div class="essay-meta">
-          <span class="mono-date">Upcoming</span>
-        </div>
-        <div class="essay-content">
-          <h3>
-            <a href="#" class="essay-link">Why Decision Intelligence Matters</a>
-          </h3>
-          <p class="essay-desc">
-            Moving beyond "Prediction" (what will happen) to "Decision" (what we should do). The missing layer in the current GenAI stack.
-          </p>
-          <span class="coming-soon">Coming soon</span>
-        </div>
-      </article>
+<p class="essay-desc">
+Civil engineering has spent a century mastering safety in high-stakes physical environments, such as buildings and bridges.
+</p>
 
-      <!-- Topic 4 -->
-      <article class="essay-item">
-        <div class="essay-meta">
-          <span class="mono-date">Upcoming</span>
-        </div>
-        <div class="essay-content">
-          <h3>
-            <a href="#" class="essay-link">What Should Humans Decide, and What Should AI Decide?</a>
-          </h3>
-          <p class="essay-desc">
-            A framework for "Human-in-the-loop" vs. "Human-on-the-loop." Defining the threshold of autonomous delegation in critical infrastructure.
-          </p>
-          <span class="coming-soon">Coming soon</span>
-        </div>
-      </article>
+<p class="essay-desc">
+How about applying these "safety guardrails" from the physical world to steer AI?
+</p>
 
-      <!-- Topic 5 -->
-      <article class="essay-item">
-        <div class="essay-meta">
-          <span class="mono-date">Upcoming</span>
-        </div>
-        <div class="essay-content">
-          <h3>
-            <a href="#" class="essay-link">From Prediction to Decision</a>
-          </h3>
-          <p class="essay-desc">
-            The economic value of AI lies not in generating text, but in reducing uncertainty in high-stakes decision-making.
-          </p>
-          <span class="coming-soon">Coming soon</span>
-        </div>
-      </article>
+</div>
+</article>
 
-      <!-- Topic 6 -->
-      <article class="essay-item">
-        <div class="essay-meta">
-          <span class="mono-date">Upcoming</span>
-        </div>
-        <div class="essay-content">
-          <h3>
-            <a href="#" class="essay-link">Building Trustworthy Human–AI Decision Systems</a>
-          </h3>
-          <p class="essay-desc">
-            Trust is an engineering constraint, not a sentiment. How to architect systems that fail gracefully and explain their reasoning.
-          </p>
-          <span class="coming-soon">Coming soon</span>
-        </div>
-      </article>
+<!-- Topic 2 -->
+<article class="essay-item">
+<div class="essay-meta">
+<span class="mono-date">Upcoming</span>
+</div>
 
-    </section>
+<div class="essay-content">
+<h3>
+<a href="#" class="essay-link">Why do a PhD when AI can code <em>almost</em> everything?</a>
+</h3>
 
-  </main>
+<p class="essay-desc">
+If AI can write code, generate papers, and even design experiments on its own, what is the point of doing a PhD? 
+A reflection on the role of scientists and researchers in the age of AI.          
+</p>
+
+</div>
+</article>
+
+<!-- Topic 3 -->
+<article class="essay-item">
+<div class="essay-meta">
+<span class="mono-date">Upcoming</span>
+</div>
+
+<div class="essay-content">
+<h3>
+<a href="#" class="essay-link">Why decision intelligence matters: from prediction to decision</a>
+</h3>
+
+<p class="essay-desc">
+Moving beyond "Prediction" (what will happen) to "Decision" (what we should do). 
+The missing layer in most of the existing AI models: translating uncertainties and objectives into actions.
+</p>
+
+</div>
+</article>
+
+<!-- Topic 4 -->
+<article class="essay-item">
+<div class="essay-meta">
+<span class="mono-date">Upcoming</span>
+</div>
+
+<div class="essay-content">
+<h3>
+<a href="#" class="essay-link">Future of cities: borrowing lessons from Nordic regionalism to the Northern Metropolis
+(未來城市: 北歐區域主義與深港北部都會區)</a>
+</h3>
+
+<p class="essay-desc">
+The Northern Metropolis is a bold vision to inject new economic momentum into Hong Kong,
+while establishing a closer connection with the tech hubs in Shenzhen.
+However, cross-border challenges in governance, culture, and sustainability integration remain.
+</p>
+
+<p class="essay-desc">
+What can Nordic regionalism teach us about creating human-centric and sustainable cities?
+</p>
+
+</div>
+</article>
+
+<!-- Topic 5 -->
+<article class="essay-item">
+<div class="essay-meta">
+<span class="mono-date">Upcoming</span>
+</div>
+
+<div class="essay-content">
+<h3>
+<a href="#" class="essay-link">Green retrofitting is not an optimisation problem</a>
+</h3>
+
+<p class="essay-desc">
+Trade-offs between energy efficiency, cost, and occupant comfort cannot be reduced to a mathematical optimisation problem
+or solved by computing a Pareto front alone.
+</p>
+
+<p class="essay-desc">
+If we want to accelerate the net zero progress, we need to address the socio-technical challenges 
+that require human judgment, stakeholder engagement, and ethical considerations.         
+</p>
+
+</div>
+</article>
+
+</section>
+
+</main>
 </Layout>
 
 <style>

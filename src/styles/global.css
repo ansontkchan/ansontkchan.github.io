@@ -940,6 +940,7 @@ margin-bottom:2rem;
     grid-template-columns:1fr;
     gap:1.5rem;
 }
+}
 
 /* ===================================
    Teaching
@@ -1049,3 +1050,98 @@ nav{
   gap:2rem;
 
 }
+  /* =========================================
+     FOOTER STYLES
+     ========================================= */
+  .site-footer {
+    background: #f9f9f9; /* Light Grey Background like Reference */
+    border-top: 1px solid #e5e5e5;
+    padding: 4rem 0 2rem;
+    margin-top: auto; /* Pushes footer to bottom if page is short */
+  }
+
+  .footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr; /* Contact gets more space */
+    gap: 4rem;
+  }
+
+  .footer-col h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  /* Contact Groups */
+  .contact-group {
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #666;
+    margin-bottom: 0.3rem;
+  }
+
+  .footer-text {
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .footer-link {
+    font-size: 0.95rem;
+    color: #0067c0; /* Academic Blue */
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .footer-link:hover { text-decoration: underline; }
+
+  /* Navigation Lists */
+  .footer-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-nav li {
+    margin-bottom: 0.8rem;
+  }
+
+  .footer-nav a {
+    font-size: 0.95rem;
+    color: #555;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .footer-nav a:hover { color: #0067c0; }
+
+  /* Bottom Copyright */
+  .footer-bottom {
+    max-width: 1100px;
+    margin: 3rem auto 0;
+    padding: 2rem 2rem 0;
+    border-top: 1px solid #e5e5e5;
+    text-align: center; /* Or left if you prefer */
+  }
+
+  .footer-bottom p {
+    font-size: 0.85rem;
+    color: #888;
+  }
+
+  /* MOBILE RESPONSIVE */
+  @media (max-width: 768px) {
+    .footer-container {
+      grid-template-columns: 1fr; /* Stack vertically on phone */
+      gap: 2rem;
+    }
+  }

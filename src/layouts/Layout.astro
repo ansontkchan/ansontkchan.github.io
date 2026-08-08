@@ -37,7 +37,7 @@ const { title = "Anson Chan" } = Astro.props;
 				<div class="footer-col">
 					<h3>Contact Information</h3>
 					
-					<!-- 🛠️ FIX: Clean inline presentation for the email -->
+					<!-- Clean inline presentation for the email -->
 					<div class="contact-group inline-layout">
 						<span class="footer-label">Email: </span>
 						<a href="mailto:tkc@cam.ac.uk" class="footer-link-inline">tkc@cam.ac.uk</a>
@@ -86,16 +86,36 @@ const { title = "Anson Chan" } = Astro.props;
 </html>
 
 <style is:global>
-  body {
+  /* 🛠️ CRITICAL FIX: Explicit global browser normalization overrides for GitHub Pages production builds */
+  html, body {
     margin: 0;
     padding: 0;
+    width: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
   }
 
+  /* 🎯 FORCES BULLETS TO DISAPPEAR ONLINE AND FIXES ALL OVERLAPS */
+  ul, ol, .footer-nav {
+    list-style: none !important; 
+    list-style-type: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  li {
+    list-style: none !important;
+  }
+
   .main-content-wrapper {
     flex: 1;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
   }
 
   /* =========================================
@@ -104,9 +124,9 @@ const { title = "Anson Chan" } = Astro.props;
   .site-footer {
     background: #fafafa;
     border-top: 1px solid #e5e5e5;
-    /* 🛠️ FIX 1: Heavily reduced top/bottom padding to make the footer much thinner */
     padding: 2rem 0 1.5rem; 
     width: 100%;
+    box-sizing: border-box;
   }
 
   .footer-container {
@@ -114,31 +134,28 @@ const { title = "Anson Chan" } = Astro.props;
     margin: 0 auto;
     padding: 0 2rem;
     display: grid;
-    /* Balanced 3-column distribution fixes the ugly right-hand gaps */
     grid-template-columns: 1.2fr 0.9fr 0.9fr; 
     gap: 3rem;
+    box-sizing: border-box;
   }
 
   .footer-col h3 {
     font-size: 0.85rem;
     font-weight: 700;
     color: #111;
-    /* 🛠️ FIX 2: Tightened gap between heading and contents (was 1.5rem) */
     margin: 0 0 0.75rem 0; 
     text-transform: uppercase;
     letter-spacing: 0.05em;
   }
 
-  /* Contact Groups */
   .contact-group {
-    /* 🛠️ FIX 2: Reduced bottom margin between info blocks */
     margin-bottom: 0.75rem; 
   }
+  
   .contact-group:last-child {
     margin-bottom: 0;
   }
 
-  /* 🛠️ FIX 2: Inline Email Flex Container */
   .inline-layout {
     display: flex;
     align-items: baseline;
@@ -150,8 +167,7 @@ const { title = "Anson Chan" } = Astro.props;
     font-weight: 700;
     color: #666;
     text-transform: uppercase;
-    /* 🛠️ FIX 2: Zeroed margins to clear out air bubbles */
-    margin: 0 0 0.15rem 0; 
+    margin: 0; 
   }
 
   .footer-text {
@@ -167,21 +183,15 @@ const { title = "Anson Chan" } = Astro.props;
     text-decoration: none;
     font-weight: 600;
   }
+  
   .footer-link-inline:hover { 
     text-decoration: underline; 
   }
 
-  /* Navigation Lists */
-  .footer-nav {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
   .footer-nav li {
-    /* 🛠️ FIX 2: Squeezed navigation item vertical space (was 0.8rem) */
     margin-bottom: 0.45rem; 
   }
+  
   .footer-nav li:last-child {
     margin-bottom: 0;
   }
@@ -203,10 +213,10 @@ const { title = "Anson Chan" } = Astro.props;
   .footer-bottom {
     max-width: 1100px;
     margin: 2rem auto 0;
-    /* 🛠️ FIX 1: Lowered secondary padding block */
     padding: 1.25rem 2rem 0; 
     border-top: 1px solid #e5e5e5;
     text-align: left;
+    box-sizing: border-box;
   }
 
   .footer-bottom p {
@@ -221,6 +231,7 @@ const { title = "Anson Chan" } = Astro.props;
       grid-template-columns: 1fr;
       gap: 1.75rem;
     }
+    
     .footer-bottom {
       margin-top: 1.5rem;
       padding-top: 1rem;

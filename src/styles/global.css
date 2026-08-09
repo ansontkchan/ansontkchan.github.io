@@ -720,3 +720,79 @@ figcaption { font-size: .9rem; color: #666; margin-top: .1rem; text-align: cente
     padding-top: 1rem !important;
   }
 }
+/* =======================================================
+   13. MASTER MOBILE VIEWPORT STABILIZATION UTILITIES
+======================================================= */
+@media (max-width: 768px) {
+  /* 🎯 MASTER STABILIZER: Prevents any content or uncontained image from overflowing the screen boundary */
+  html, body {
+    overflow-x: hidden !important;
+    width: 100% !important;
+  }
+
+  /* 🎯 IMAGE ORIENTATION HARMONIZATION: Forces content modules to always stack linearly */
+  .hero, .theme-hero, .research-grid, .framework-grid {
+    display: flex !important;
+    flex-direction: column !important; /* Forces top-to-bottom reading path */
+    align-items: stretch !important;
+    gap: 2rem !important;
+    width: 100% !important;
+  }
+
+  /* 🎯 FIXED POSITIONING: Guarantees profile and theme illustrations stack cleanly below the header text blocks */
+  .hero-photo, .theme-hero-image {
+    order: 2 !important; /* Pushes illustrations below text block */
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    margin: 1.5rem auto 0 auto !important;
+  }
+
+  .hero-text, .theme-hero-text {
+    order: 1 !important; /* Locks text block at the top */
+    max-width: 100% !important;
+    text-align: left !important;
+  }
+
+  /* 🎯 RESPONSIVE IMAGE CONTAINERS: Prevents technical blueprints and chart graphics from overflowing the viewport border */
+  .project-figure, .paper-image, .theme-hero-logo, .profile-photo {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
+  }
+  
+  .profile-photo {
+    width: 200px !important;
+    height: 200px !important;
+  }
+
+  /* =======================================================
+     MOBILE RESPONSIVE LOGO MATRIX & TILES
+  ======================================================= */
+  .vision-grid, .framework-grid {
+    grid-template-columns: 1fr !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1.5rem !important;
+  }
+
+  /* Centers corporate branding and project identity marks securely on phone grids */
+  .logo-box {
+    width: 120px !important;
+    height: 120px !important;
+    margin: 0 auto 1.5rem auto !important;
+  }
+
+  .theme-logo {
+    max-height: 100px !important;
+    width: auto !important;
+  }
+
+  .vision-item {
+    padding: 1.5rem !important;
+    text-align: center !important;
+    align-items: center !important;
+  }
+}

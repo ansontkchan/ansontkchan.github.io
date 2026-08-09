@@ -362,6 +362,107 @@ video { margin: 1rem 0; }
 figcaption { font-size: .9rem; color: #666; margin-top: .1rem; text-align: center; font-style: italic; }
 
 /* =======================================================
+   CORE FORCE: 4-FEATURE TOOLKIT DASHBOARD TILES
+======================================================= */
+.project-page .framework-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important; /* Forces 2 columns side-by-side */
+  gap: 1.5rem !important;
+  margin: 2rem auto 3.5rem auto !important;
+  width: 100% !important;
+  clear: both !important;
+}
+
+.project-page .framework-card {
+  background: #ffffff !important;
+  padding: 1.75rem !important;
+  border: 1px solid #e5e5e5 !important;
+  border-radius: 14px !important;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04) !important;
+  box-sizing: border-box !important;
+  display: block !important;
+}
+
+.project-page .framework-card h3 {
+  font-size: 1.1rem !important;
+  font-weight: 700 !important;
+  color: #111 !important;
+  margin: 0 0 1rem 0 !important;
+}
+
+/* 🎯 STRIPS VERTICAL BULLET OVERRIDES INSIDE THE CARDS */
+.project-page .framework-card ul,
+.project-page .framework-card .card-list {
+  list-style: disc !important;
+  list-style-type: disc !important;
+  padding-left: 1.25rem !important;
+  margin: 0 !important;
+}
+
+.project-page .framework-card li {
+  display: list-item !important;
+  list-style: disc !important;
+  list-style-type: disc !important;
+  margin-bottom: 0.5rem !important;
+  font-size: 0.95rem !important;
+  color: #444 !important;
+  padding-left: 0 !important;
+}
+
+/* =======================================================
+   🛠️ BUTTON GROUP SPACING REGULATION
+======================================================= */
+.project-page .button-group,
+.button-group {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  /* 🎯 FIX: Adds a crisp 1rem horizontal and vertical gap between buttons */
+  gap: 1.25rem !important; 
+  align-items: center !important;
+  /* Adds a 2.5rem buffer space below your framework grid to pull buttons down */
+  margin-top: 2.5rem !important; 
+  margin-bottom: 2rem !important;
+  width: 100% !important;
+}
+
+/* Ensures individual buttons maintain clear baseline height proportions */
+.hero-button {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* =======================================================
+   🛠️ SPACING FIX: ACKNOWLEDGEMENTS SEGMENT PUSH
+======================================================= */
+.project-page .acknowledgements {
+  display: block !important;
+  clear: both !important;
+  width: 100% !important;
+  /* Massive vertical separation space between buttons/content and header */
+  margin-top: 6rem !important; 
+  padding-top: 2.5rem !important;
+  border-top: 1px solid #e5e5e5 !important;
+}
+
+.project-page .acknowledgements h2 {
+  font-size: 1.8rem !important;
+  font-weight: 700 !important;
+  color: #111 !important;
+  margin-bottom: 1.25rem !important;
+}
+
+/* =======================================================
+   RESPONSIVE DESIGN SYSTEM BREAKPOINT
+======================================================= */
+@media (max-width: 900px) {
+  .project-page .framework-grid {
+    grid-template-columns: 1fr !important; /* Beautiful single column fallback on mobile phones */
+    gap: 1.25rem !important;
+  }
+}
+
+/* =======================================================
    9. THEME LAYOUT MVP COMPONENTS
 ======================================================= */
 .theme-section { margin-top: 4rem; }
